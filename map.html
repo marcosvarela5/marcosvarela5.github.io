@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Travel Map Minimalista</title>
+  <title>Travel Map</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -36,27 +36,27 @@
       center: [20, 0],
       zoom: 2,
       maxBounds: bounds,
-      maxBoundsViscosity: 1.0,  // Para que no te puedas salir del bounds
-      worldCopyJump: false,      // Evita scroll horizontal infinito
+      maxBoundsViscosity: 1.0, 
+      worldCopyJump: false,
       minZoom: 2,
       maxZoom: 5,
       zoomControl: true
     });
 
-    // Mapa base minimalista sin etiquetas
+    
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
       maxZoom: 19,
-      noWrap: true            // También evita wrapping horizontal
+      noWrap: true            
     }).addTo(map);
 
     // Países visitados (ISO A3)
     const visitedCountries = ["ESP", "PRT", "GBR", "DEU", "AUT"];
 
-    // Estilo para los países
+    
     function style(feature) {
       return {
-        fillColor: visitedCountries.includes(feature.id) ? 'green' : '#ccc',
+        fillColor: visitedCountries.includes(feature.id) ? 'blue' : '#ccc',
         weight: 1,
         color: 'white',
         fillOpacity: 0.7
