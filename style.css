@@ -137,7 +137,7 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   justify-content: center;
 }
@@ -325,6 +325,92 @@ footer {
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
+.cv-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.cv-intro i {
+  color: #3b82f6;
+  margin-right: 0.5rem;
+}
+
+.cv-intro a {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cv-intro a:hover {
+  text-decoration: underline;
+}
+
+.flag-icon {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  border-radius: 2px;
+}
+
+.language-item {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  color: #4a5568;
+  line-height: 1.4;
+}
+
+.flag-icon {
+  width: 20px;
+  height: auto;
+  vertical-align: baseline;
+  margin-right: 0.4rem;
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #34495e;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
+
+
 /* Responsive */
 @media (max-width: 600px) {
   .home-content {
@@ -333,10 +419,5 @@ footer {
 
   .home-text h1 {
     font-size: 2rem;
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 1rem;
   }
 }

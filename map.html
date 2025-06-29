@@ -12,15 +12,18 @@
   </style>
 </head>
   <header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">CV</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="map.html" class="active">Travel Map!</a></li>
-      </ul>
-    </nav>
+<nav>
+  <button class="menu-toggle" aria-label="Open menu">
+    <i class="fas fa-bars"></i>
+  </button>
+  <ul id="main-menu" class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">CV</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="map.html" class="active">Travel Map!</a></li>
+  </ul>
+</nav>
   </header>
 <body>
   <h2 class="travel-map-title">Where I have been:</h2>
@@ -77,6 +80,8 @@
         }).addTo(map);
       });
   </script>
+
+   <script src="assets/js/menumobile.js"></script>
 </body>
 
  <footer>

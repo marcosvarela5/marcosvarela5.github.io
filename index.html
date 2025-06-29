@@ -10,15 +10,18 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">CV</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="map.html">Travel Map!</a></li>
-      </ul>
-    </nav>
+<nav>
+  <button class="menu-toggle" aria-label="Open menu">
+    <i class="fas fa-bars"></i>
+  </button>
+  <ul id="main-menu" class="menu">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">CV</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="map.html">Travel Map!</a></li>
+  </ul>
+</nav>
   </header>
 
 <main>
@@ -71,5 +74,7 @@
       </a>
     </div>
   </footer>
+
+  <script src="assets/js/menumobile.js"></script>
 </body>
 </html>

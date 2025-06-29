@@ -11,86 +11,147 @@
 <body>
 
   <header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">CV</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="map.html">Travel Map!</a></li>
-      </ul>
-    </nav>
+<nav>
+  <button class="menu-toggle" aria-label="Open menu">
+    <i class="fas fa-bars"></i>
+  </button>
+  <ul id="main-menu" class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">CV</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="map.html">Travel Map!</a></li>
+  </ul>
+</nav>
   </header>
 
   <main>
-    <section class="section-cv">
-      <h2>Curriculum Vitae</h2>
+<section class="section-cv">
+  <section class="section-cv">
+  <h2>Curriculum Vitae</h2>
 
-      <div class="grid-container">
-        <div class="card fade-in">
-          <h3><i class="fas fa-user"></i> Who am I?</h3>
-          <p>I'm Marcos Varela, a junior software developer from Spain. I'm passionate about building clean and scalable solutions, mainly focused on backend development.</p>
-        </div>
+  <div class="cv-profile" style="text-align:center; margin-bottom:2rem;">
+    <img src="assets/img/profilepic.png" alt="Profile Photo" style="width:120px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:1rem;">
+    <p style="font-size:1.1rem; max-width:600px; margin:0 auto;">
+      I am <strong>Marcos Varela</strong>, a junior backend developer passionate about building clean, scalable solutions using <strong>Java Spring Boot</strong> and <strong>.NET</strong>. 
+      I also enjoy frontend technologies like React and ASP.NET and I'm working hard on improving my skills to become a Full Stack.<br>
+      Here is a brief overview of my professional profile.  </p>
+  </div>
 
-        <div class="card fade-in delay-1">
-          <h3><i class="fas fa-code"></i>Technical Skills</h3>
+  <div class="grid-container">
+    <!-- Technical Skills -->
+    <div class="card fade-in">
+      <h3><i class="fas fa-code"></i> Technical Skills</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+        <div style="flex:1 1 45%;">
+          <h4>Backend</h4>
           <ul>
-            <li>Frontend: HTML, CSS, JavaScript, React, ASP.NET</li>
-            <li>Backend: Java, C, C#, Spring Boot, .NET (Entity Framework), RESTful</li>
-            <li>Databases: MySQL, PostgreSQL</li>
-            <li>JUnit testing</li>
-            <li>UI/UX and accessible design</li>
-            <li>Git, Git Flow</li>
-            <li>Agile methodologies (Scrum, Kanban)</li>
-            <li>CI/CD with Jenkins, Redmine, SonarQube</li>
-            <li>Quality Management</li>
+            <li><span class="badge">Java</span> Spring Boot</li>
+            <li><span class="badge">C#</span> .NET Core</li>
+            <li>RESTful APIs</li>
           </ul>
         </div>
-
-        <div class="card fade-in delay-2">
-          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-          <p>Bachelor's Degree in Computer Science<br>University of A Coruña</p>
-          <img src="assets/img/udc.png" alt="Imagen de Happy" />
-        </div>
-
-        <div class="card fade-in delay-3">
-          <h3><i class="fas fa-certificate"></i> Courses</h3>
+        <div style="flex:1 1 45%;">
+          <h4>Frontend</h4>
           <ul>
-            <li>Basics of Java – Udemy</li>
-            <li>Spigot API Development for Minecraft Plugins – Stephen King</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li><span class="badge">React</span> & ASP.NET</li>
           </ul>
         </div>
-
-        <div class="card fade-in delay-4">
-          <h3><i class="fas fa-language"></i> Languages</h3>
+        <div style="flex:1 1 100%;">
+          <h4>Other Tools</h4>
           <ul>
-            <li>Spanish, Galician – Native</li>
-            <li>English – B1 certified in 2016. My current level is significantly higher and I feel confident in technical conversations.</li>
-            <li>German – Currently studying, aiming for B1!</li>
+            <li>PostgreSQL & MySQL</li>
+            <li>CI/CD: Redmine, Jenkins, SonarQube</li>
+            <li>Git, Agile methodologies</li>
           </ul>
-        </div>
-
-        <div class="card fade-in delay-5">
-          <h3><i class="fas fa-tree"></i> Personal Interests</h3>
-          <u1>
-            <li>Nature: Fishing, hiking, and camping</li>
-            <li>Travel: Exploring new places and cultures.</li>
-            <li>Graphic Design: I have done lots of designs both for my friends and for myself. From party-related shirts to social media channel logos, even the entire production
-              for our own podcast.</li>
-          </u1>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Education -->
+    <div class="card fade-in delay-1">
+      <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+      <p><strong>Bachelor's Degree in Computer Science</strong><br>University of A Coruña</p>
+      <img src="assets/img/udc.png" alt="University of A Coruña logo" style="margin-top:1rem;">
+    </div>
+
+          <div class="card fade-in delay-5">
+  <h3><i class="fas fa-users"></i> Soft Skills</h3>
+  <ul>
+    <li>Teamwork & collaboration</li>
+    <li>Problem-solving mindset</li>
+    <li>Effective time management</li>
+    <li>Strong communication skills</li>
+    <li>Public speaking</li>
+    <li>Empathy</li>
+    <li>Stress management</li>
+  </ul>
+</div>
+
+    <div class="card fade-in delay-4">
+      <h3><i class="fas fa-language"></i> Languages</h3>
+      <div class="language-item">
+        <img src="assets/img/flags/es.png" alt="Spanish flag" class="flag-icon">
+        <img src="assets/img/flags/gal.png" alt="Galician flag" class="flag-icon">
+        <strong>Spanish, Galician</strong> – Native
+      </div>
+      <div class="language-item">
+        <img src="assets/img/flags/gb.png" alt="UK flag" class="flag-icon">
+        <strong>English</strong> – B1 certified, actual level higher. Confident in technical conversations and job interviews.
+      </div>
+      <div class="language-item">
+        <img src="assets/img/flags/fr.png" alt="French flag" class="flag-icon">
+        <strong>French</strong> – Basics
+      </div>
+      <div class="language-item">
+        <img src="assets/img/flags/pt.png" alt="Portuguese flag" class="flag-icon">
+        <strong>Portuguese</strong> – Proficient (Galician native)
+      </div>
+      <div class="language-item">
+        <img src="assets/img/flags/de.png" alt="German flag" class="flag-icon">
+        <strong>German</strong> – Currently studying (aiming B1)</strong>
+      </div>
+    </div>
+
+    <div class="card fade-in delay-3">
+      <h3><i class="fas fa-certificate"></i> Certifications & Courses</h3>
+      <ul>
+        <li><strong>Basics of Java</strong> – Udemy</li>
+        <li><strong>Spigot API Development</strong> – Stephen King</li>
+      </ul>
+    </div>
+
+    <!-- Personal Interests -->
+    <div class="card fade-in delay-4">
+      <h3><i class="fas fa-heart"></i> Interests</h3>
+      <ul>
+        <li>Fishing, hiking, camping</li>
+        <li>Exploring new cultures</li>
+        <li>Graphic design for social media and podcasts</li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+
+  <div style="text-align:center; margin-top:2rem;">
+    <a href="mailto:marcosf.varelam@gmail.com?Subject=CV%20Request" class="btn-primary">Request full CV</a></div><br>
+    <p>Not working? Contact me at: marcosf.varelam@gmail.com</p>
+  </div>
+</section>
   </main>
 
   <footer>
     <p>&copy; 2025 Marcos Varela</p>
     <div class="footer-icons">
-      <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:tucorreo@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/marcosvarela5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/marcosvarela5" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </footer>
-
+ <script src="assets/js/menumobile.js"></script>
 </body>
 </html>
