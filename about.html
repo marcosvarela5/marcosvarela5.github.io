@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Me | Marcos Varela</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <script defer src="assets/js/about.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV | Marcos Varela</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script defer src="assets/js/about.js"></script>
+</head>
+<body>
 
-  </head>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">CV</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="map.html">Travel Map!</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <body>
+  <main>
+    <section class="section-cv">
+      <h2>Curriculum Vitae</h2>
 
-    <header>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">CV</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="map.html">Travel Map!</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="section-about">
-        <h2>About Me</h2>
-
-        <div class="bio-block">
-          <h3>Who am I?</h3>
-          <p>
-            I'm Marcos Varela, a software developer passionate about building clean and scalable solutions.
-          </p>
+      <div class="grid-container">
+        <div class="card fade-in">
+          <h3><i class="fas fa-user"></i> Who am I?</h3>
+          <p>I'm Marcos Varela, a junior software developer from Spain. I'm passionate about building clean and scalable solutions, mainly focused on backend development.</p>
         </div>
 
-        <div class="bio-block">
-          <h3>Specialties</h3>
+        <div class="card fade-in delay-1">
+          <h3><i class="fas fa-code"></i>Languages & Tools</h3>
           <ul>
             <li>Frontend: HTML, CSS, JavaScript, React, ASP.NET</li>
-            <li>Backend: Java, C, C#, Spring Boot</li>
+            <li>Backend: Java, C, C#, Spring Boot, .NET (Entity Framework)</li>
+            <li>Databases: MySQL, PostgreSQL</li>
             <li>UI/UX and accessible design</li>
           </ul>
         </div>
 
-        <div class="bio-block">
-          <h3>Personal Interests</h3>
-          <p>
-            I'm interested in
-          </p>
+        <div class="card fade-in delay-2">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <p>Bachelor's Degree in Computer Science<br>University of A Coruña</p>
+          <img src="assets/img/udc.png" alt="Imagen de Happy" />
         </div>
-      </section>
-    </main>
 
-    <footer>
-      <p>&copy; 2025 Marcos Varela</p>
-    </footer>
-  </body>
+        <div class="card fade-in delay-3">
+          <h3><i class="fas fa-certificate"></i> Courses</h3>
+          <ul>
+            <li>Basics of Java – Udemy</li>
+            <li>Spigot API Development for Minecraft Plugins – Stephen King</li>
+          </ul>
+        </div>
+
+        <div class="card fade-in delay-4">
+          <h3><i class="fas fa-language"></i> Languages</h3>
+          <ul>
+            <li>Spanish, Galician – Native</li>
+            <li>English – B1 certified in 2016. My current level is significantly higher and I feel confident in technical conversations.</li>
+            <li>German – Currently studying, aiming for B1!</li>
+          </ul>
+        </div>
+
+        <div class="card fade-in delay-5">
+          <h3><i class="fas fa-tree"></i> Personal Interests</h3>
+          <u1>
+            <li>Nature: Fishing, hiking, and camping</li>
+            <li>Travel: Exploring new places and cultures.</li>
+            <li>Graphic Design: I have done lots of designs both for my friends and for myself. From party-related shirts to social media channel logos, even the entire production
+              for our own podcast.</li>
+          </u1>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Marcos Varela</p>
+    <div class="footer-icons">
+      <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:tucorreo@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+</body>
 </html>
