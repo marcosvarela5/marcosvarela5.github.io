@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Map Minimalista</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    #map { height: 600px; width: 100%; }
+    body { margin: 0; }
+  </style>
+</head>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">CV</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="map.html" class="active">Travel Map!</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+  <h2 class="travel-map-title">Where I have been:</h2>
+  <div id="map" class="travel-map"></div>
+
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Crear mapa centrado y con límites del mundo
+    const bounds = [[-90, -180], [90, 180]];
+
+    const map = L.map('map', {
+      center: [20, 0],
+      zoom: 2,
+      maxBounds: bounds,
+      maxBoundsViscosity: 1.0,  // Para que no te puedas salir del bounds
+      worldCopyJump: false,      // Evita scroll horizontal infinito
+      minZoom: 2,
+      maxZoom: 5,
+      zoomControl: true
+    });
+
+    // Mapa base minimalista sin etiquetas
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+      maxZoom: 19,
+      noWrap: true            // También evita wrapping horizontal
+    }).addTo(map);
+
+    // Países visitados (ISO A3)
+    const visitedCountries = ["ESP", "PRT", "GBR", "DEU", "AUT"];
+
+    // Estilo para los países
+    function style(feature) {
+      return {
+        fillColor: visitedCountries.includes(feature.id) ? 'green' : '#ccc',
+        weight: 1,
+        color: 'white',
+        fillOpacity: 0.7
+      };
+    }
+
+    // Cargar GeoJSON y pintar
+    fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
+      .then(res => res.json())
+      .then(geojson => {
+        L.geoJson(geojson, {
+          style: style,
+          onEachFeature: (feature, layer) => {
+            if (visitedCountries.includes(feature.id)) {
+              layer.bindPopup(feature.properties.ADMIN);
+            }
+          }
+        }).addTo(map);
+      });
+  </script>
+</body>
+
+ <footer>
+  <p>&copy; 2025 Marcos Varela</p>
+  <div class="footer-icons">
+    <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://github.com/marcosvarela5" target="_blank" rel="noopener" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/marcosvarela5" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</footer>
+</html>
