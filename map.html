@@ -1,113 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Travel Map</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://marcosvarela5.github.io/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    #map { height: 600px; width: 100%; }
-    body { margin: 0; }
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
   </style>
 </head>
 
 <body>
 
-<header>
-<nav>
-  <button class="menu-toggle" aria-label="Open menu">
-    <i class="fas fa-bars"></i>
-  </button>
-  <ul id="main-menu" class="menu">
-    <li><a href="index.html"><span data-i18n="menu.home"></span></a></li>
-    <li><a href="about.html"><span data-i18n="menu.cv"></span></a></li>
-    <li><a href="portfolio.html"><span data-i18n="menu.portfolio"></span></a></li>
-    <li><a href="contact.html"><span data-i18n="menu.contact"></span></a></li>
-    <li><a href="map.html" class="active"><span data-i18n="menu.map"></span></a></li>
-  </ul>
-  <div class="lang-selector">
-    <button data-set-lang="en" aria-label="English">
-      <img src="assets/img/flags/gb.png" alt="English" class="flag-icon">
-    </button>
-    <button data-set-lang="es" aria-label="Español">
-      <img src="assets/img/flags/es.png" alt="Español" class="flag-icon">
-    </button>
-    <button data-set-lang="de" aria-label="Deutsch">
-      <img src="assets/img/flags/de.png" alt="Deutsch" class="flag-icon">
-    </button>
-  </div>
-</nav>
-</header>
+  <header>
+    <nav>
+      <button class="menu-toggle" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="main-menu" class="menu">
+        <li><a href="index.html"><span data-i18n="menu.home"></span></a></li>
+        <li><a href="about.html"><span data-i18n="menu.cv"></span></a></li>
+        <li><a href="portfolio.html"><span data-i18n="menu.portfolio"></span></a></li>
+        <li><a href="contact.html"><span data-i18n="menu.contact"></span></a></li>
+        <li><a href="map.html" class="active"><span data-i18n="menu.map"></span></a></li>
+      </ul>
+      <div class="lang-selector">
+        <button data-set-lang="en" aria-label="English">
+          <img src="assets/img/flags/gb.png" alt="English" class="flag-icon">
+        </button>
+        <button data-set-lang="es" aria-label="Español">
+          <img src="assets/img/flags/es.png" alt="Español" class="flag-icon">
+        </button>
+        <button data-set-lang="de" aria-label="Deutsch">
+          <img src="assets/img/flags/de.png" alt="Deutsch" class="flag-icon">
+        </button>
+      </div>
+    </nav>
+  </header>
 
-<h2 class="travel-map-title"><span data-i18n="index.visitedCountries"></span></h2>
-<div id="map" class="travel-map"></div>
+  <h2 class="travel-map-title"><span data-i18n="index.visitedCountries"></span></h2>
+  <div id="map" class="travel-map"></div>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script>
-  // Crear mapa centrado y con límites del mundo
-  const bounds = [[-90, -180], [90, 180]];
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Crear mapa centrado y con límites del mundo
+    const bounds = [[-90, -180], [90, 180]];
 
-  const map = L.map('map', {
-    center: [20, 0],
-    zoom: 2,
-    maxBounds: bounds,
-    maxBoundsViscosity: 1.0, 
-    worldCopyJump: false,
-    minZoom: 2,
-    maxZoom: 5,
-    zoomControl: true
-  });
-
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-    maxZoom: 19,
-    noWrap: true            
-  }).addTo(map);
-
-  const visitedCountries = ["ESP", "PRT", "GBR", "DEU", "AUT"];
-
-  function style(feature) {
-    return {
-      fillColor: visitedCountries.includes(feature.id) ? 'blue' : '#ccc',
-      weight: 1,
-      color: 'white',
-      fillOpacity: 0.7
-    };
-  }
-
-  fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
-    .then(res => res.json())
-    .then(geojson => {
-      L.geoJson(geojson, {
-        style: style,
-        onEachFeature: (feature, layer) => {
-          if (visitedCountries.includes(feature.id)) {
-            layer.bindPopup(feature.properties.ADMIN);
-          }
-        }
-      }).addTo(map);
+    const map = L.map('map', {
+      center: [20, 0],
+      zoom: 2,
+      maxBounds: bounds,
+      maxBoundsViscosity: 1.0,
+      worldCopyJump: false,
+      minZoom: 2,
+      maxZoom: 5,
+      zoomControl: true
     });
-</script>
 
-<script src="assets/js/menumobile.js"></script>
-<script src="assets/js/lang.js"></script>
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+      maxZoom: 19,
+      noWrap: true
+    }).addTo(map);
 
-<footer>
-  <p>&copy; 2025 Marcos Varela</p>
-  <div class="footer-icons">
-    <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://github.com/marcosvarela5" target="_blank" rel="noopener" aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://linkedin.com/in/marcosvarela5" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-  </div>
-  <p><span data-i18n="footer.contactMe"></span> marcosf.varelam@gmail.com</p>
-</footer>
+    const visitedCountries = ["ESP", "PRT", "GBR", "DEU", "AUT"];
+
+    function style(feature) {
+      return {
+        fillColor: visitedCountries.includes(feature.id) ? 'blue' : '#ccc',
+        weight: 1,
+        color: 'white',
+        fillOpacity: 0.7
+      };
+    }
+
+    fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
+      .then(res => res.json())
+      .then(geojson => {
+        L.geoJson(geojson, {
+          style: style,
+          onEachFeature: (feature, layer) => {
+            if (visitedCountries.includes(feature.id)) {
+              layer.bindPopup(feature.properties.ADMIN);
+            }
+          }
+        }).addTo(map);
+      });
+  </script>
+
+  <script src="assets/js/menumobile.js"></script>
+  <script src="assets/js/lang.js"></script>
+
+  <footer>
+    <p>&copy; 2025 Marcos Varela</p>
+    <div class="footer-icons">
+      <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/marcosvarela5" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/marcosvarela5" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p><span data-i18n="footer.contactMe"></span> marcosf.varelam@gmail.com</p>
+  </footer>
 
 </body>
+
 </html>

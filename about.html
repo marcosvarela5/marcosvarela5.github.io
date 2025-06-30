@@ -1,168 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV | Marcos Varela</title>
   <link rel="stylesheet" href="https://marcosvarela5.github.io/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script defer src="assets/js/about.js"></script>
 </head>
+
 <body>
 
-<header>
-<nav>
-  <button class="menu-toggle" aria-label="Open menu">
-    <i class="fas fa-bars"></i>
-  </button>
-  <ul id="main-menu" class="menu">
-    <li><a href="index.html" data-i18n="menu.home"></a></li>
-    <li><a href="about.html" class="active" data-i18n="menu.cv"></a></li>
-    <li><a href="portfolio.html" data-i18n="menu.portfolio"></a></li>
-    <li><a href="contact.html" data-i18n="menu.contact"></a></li>
-    <li><a href="map.html" data-i18n="menu.map"></a></li>
-  </ul>
-  <div class="lang-selector">
-    <button data-set-lang="en" aria-label="English">
-      <img src="assets/img/flags/gb.png" alt="English" class="flag-icon">
-    </button>
-    <button data-set-lang="es" aria-label="Español">
-      <img src="assets/img/flags/es.png" alt="Español" class="flag-icon">
-    </button>
-    <button data-set-lang="de" aria-label="Deutsch">
-      <img src="assets/img/flags/de.png" alt="Deutsch" class="flag-icon">
-    </button>
-  </div>
-</nav>
-</header>
-
-<main>
-<section class="section-cv">
-  <h2 data-i18n="about.cvTitle"></h2>
-
-  <div class="cv-profile" style="text-align:center; margin-bottom:2rem;">
-    <img src="assets/img/profilepic.png" alt="Profile Photo" style="width:120px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:1rem;">
-    <p data-i18n="about.intro" style="font-size:1.1rem; max-width:600px; margin:0 auto;"></p>
-  </div>
-
-<div class="grid-container">
-  <!-- Technical Skills -->
-  <div class="card fade-in">
-    <h3><i class="fas fa-code"></i> <span data-i18n="about.technicalSkills"></span></h3>
-    <div style="display:flex; flex-wrap:wrap; gap:1rem;">
-      <div style="flex:1 1 45%;">
-        <h4 data-i18n="about.backend"></h4>
-        <ul>
-          <li><span class="badge">Java</span> Spring Boot</li>
-          <li><span class="badge">C#</span> .NET Core</li>
-          <li data-i18n="about.restApis"></li>
-        </ul>
+  <header>
+    <nav>
+      <button class="menu-toggle" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="main-menu" class="menu">
+        <li><a href="index.html" data-i18n="menu.home"></a></li>
+        <li><a href="about.html" class="active" data-i18n="menu.cv"></a></li>
+        <li><a href="portfolio.html" data-i18n="menu.portfolio"></a></li>
+        <li><a href="contact.html" data-i18n="menu.contact"></a></li>
+        <li><a href="map.html" data-i18n="menu.map"></a></li>
+      </ul>
+      <div class="lang-selector">
+        <button data-set-lang="en" aria-label="English">
+          <img src="assets/img/flags/gb.png" alt="English" class="flag-icon">
+        </button>
+        <button data-set-lang="es" aria-label="Español">
+          <img src="assets/img/flags/es.png" alt="Español" class="flag-icon">
+        </button>
+        <button data-set-lang="de" aria-label="Deutsch">
+          <img src="assets/img/flags/de.png" alt="Deutsch" class="flag-icon">
+        </button>
       </div>
-      <div style="flex:1 1 45%;">
-        <h4 data-i18n="about.frontend"></h4>
-        <ul>
-          <li data-i18n="about.frontendStack"></li>
-          <li><span class="badge">React</span> & ASP.NET</li>
-        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-cv">
+      <h2 data-i18n="about.cvTitle"></h2>
+
+      <div class="cv-profile" style="text-align:center; margin-bottom:2rem;">
+        <img src="assets/img/profilepic.png" alt="Profile Photo"
+          style="width:120px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:1rem;">
+        <p data-i18n="about.intro" style="font-size:1.1rem; max-width:600px; margin:0 auto;"></p>
       </div>
-      <div style="flex:1 1 100%;">
-        <h4 data-i18n="about.otherTools"></h4>
-        <ul>
-          <li data-i18n="about.databases"></li>
-          <li data-i18n="about.cicd"></li>
-          <li data-i18n="about.versioning"></li>
-        </ul>
+
+      <div class="grid-container">
+        <!-- Technical Skills -->
+        <div class="card fade-in">
+          <h3><i class="fas fa-code"></i> <span data-i18n="about.technicalSkills"></span></h3>
+          <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+            <div style="flex:1 1 45%;">
+              <h4 data-i18n="about.backend"></h4>
+              <ul>
+                <li><span class="badge">Java</span> Spring Boot</li>
+                <li><span class="badge">C#</span> .NET Core</li>
+                <li data-i18n="about.restApis"></li>
+              </ul>
+            </div>
+            <div style="flex:1 1 45%;">
+              <h4 data-i18n="about.frontend"></h4>
+              <ul>
+                <li data-i18n="about.frontendStack"></li>
+                <li><span class="badge">React</span> & ASP.NET</li>
+              </ul>
+            </div>
+            <div style="flex:1 1 100%;">
+              <h4 data-i18n="about.otherTools"></h4>
+              <ul>
+                <li data-i18n="about.databases"></li>
+                <li data-i18n="about.cicd"></li>
+                <li data-i18n="about.versioning"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="card fade-in delay-1">
+          <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="about.education"></span></h3>
+          <p><strong data-i18n="about.degree"></strong><br><span data-i18n="about.university"></span></p>
+          <img src="assets/img/udc.png" alt="University of A Coruña logo" style="margin-top:1rem;">
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="card fade-in delay-5">
+          <h3><i class="fas fa-users"></i> <span data-i18n="about.softSkills"></span></h3>
+          <ul>
+            <li data-i18n="about.teamwork"></li>
+            <li data-i18n="about.problemSolving"></li>
+            <li data-i18n="about.timeManagement"></li>
+            <li data-i18n="about.communication"></li>
+            <li data-i18n="about.publicSpeaking"></li>
+            <li data-i18n="about.empathy"></li>
+            <li data-i18n="about.stressManagement"></li>
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="card fade-in delay-4">
+          <h3><i class="fas fa-language"></i> <span data-i18n="about.languages"></span></h3>
+          <div class="language-item">
+            <img src="assets/img/flags/es.png" alt="Spanish flag" class="flag-icon">
+            <img src="assets/img/flags/gal.png" alt="Galician flag" class="flag-icon">
+            <span data-i18n="about.spanishGalician"></span>
+          </div>
+          <div class="language-item">
+            <img src="assets/img/flags/gb.png" alt="UK flag" class="flag-icon">
+            <span data-i18n="about.english"></span>
+          </div>
+          <div class="language-item">
+            <img src="assets/img/flags/fr.png" alt="French flag" class="flag-icon">
+            <span data-i18n="about.french"></span>
+          </div>
+          <div class="language-item">
+            <img src="assets/img/flags/pt.png" alt="Portuguese flag" class="flag-icon">
+            <span data-i18n="about.portuguese"></span>
+          </div>
+          <div class="language-item">
+            <img src="assets/img/flags/de.png" alt="German flag" class="flag-icon">
+            <span data-i18n="about.german"></span>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="card fade-in delay-3">
+          <h3><i class="fas fa-certificate"></i> <span data-i18n="about.certifications"></span></h3>
+          <ul>
+            <li><strong data-i18n="about.certJava"></strong> – Udemy</li>
+            <li><strong data-i18n="about.certSpigot"></strong> – Stephen King</li>
+            <li><strong data-i18n="about.certmentoring"></strong>
+              <p data-i18n="about.university"></p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Interests -->
+        <div class="card fade-in delay-4">
+          <h3><i class="fas fa-heart"></i> <span data-i18n="about.interests"></span></h3>
+          <ul>
+            <li data-i18n="about.interest1"></li>
+            <li data-i18n="about.interest2"></li>
+            <li data-i18n="about.interest3"></li>
+          </ul>
+        </div>
       </div>
+
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="mailto:marcosf.varelam@gmail.com?Subject=CV%20Request" class="btn-primary"
+          data-i18n="about.requestCV"></a>
+      </div><br>
+      <p><span data-i18n="about.notWorking"></span> marcosf.varelam@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Marcos Varela</p>
+    <div class="footer-icons">
+      <a href="https://github.com/marcosvarela5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/marcosvarela5" target="_blank" aria-label="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
-  </div>
+    <p><span data-i18n="footer.contactMe"></span> marcosf.varelam@gmail.com</p>
+  </footer>
 
-  <!-- Education -->
-  <div class="card fade-in delay-1">
-    <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="about.education"></span></h3>
-    <p><strong data-i18n="about.degree"></strong><br><span data-i18n="about.university"></span></p>
-    <img src="assets/img/udc.png" alt="University of A Coruña logo" style="margin-top:1rem;">
-  </div>
-
-  <!-- Soft Skills -->
-  <div class="card fade-in delay-5">
-    <h3><i class="fas fa-users"></i> <span data-i18n="about.softSkills"></span></h3>
-    <ul>
-      <li data-i18n="about.teamwork"></li>
-      <li data-i18n="about.problemSolving"></li>
-      <li data-i18n="about.timeManagement"></li>
-      <li data-i18n="about.communication"></li>
-      <li data-i18n="about.publicSpeaking"></li>
-      <li data-i18n="about.empathy"></li>
-      <li data-i18n="about.stressManagement"></li>
-    </ul>
-  </div>
-
-  <!-- Languages -->
-  <div class="card fade-in delay-4">
-    <h3><i class="fas fa-language"></i> <span data-i18n="about.languages"></span></h3>
-    <div class="language-item">
-      <img src="assets/img/flags/es.png" alt="Spanish flag" class="flag-icon">
-      <img src="assets/img/flags/gal.png" alt="Galician flag" class="flag-icon">
-      <span data-i18n="about.spanishGalician"></span>
-    </div>
-    <div class="language-item">
-      <img src="assets/img/flags/gb.png" alt="UK flag" class="flag-icon">
-      <span data-i18n="about.english"></span>
-    </div>
-    <div class="language-item">
-      <img src="assets/img/flags/fr.png" alt="French flag" class="flag-icon">
-      <span data-i18n="about.french"></span>
-    </div>
-    <div class="language-item">
-      <img src="assets/img/flags/pt.png" alt="Portuguese flag" class="flag-icon">
-      <span data-i18n="about.portuguese"></span>
-    </div>
-    <div class="language-item">
-      <img src="assets/img/flags/de.png" alt="German flag" class="flag-icon">
-      <span data-i18n="about.german"></span>
-    </div>
-  </div>
-
-  <!-- Certifications -->
-  <div class="card fade-in delay-3">
-    <h3><i class="fas fa-certificate"></i> <span data-i18n="about.certifications"></span></h3>
-    <ul>
-      <li><strong data-i18n="about.certJava"></strong> – Udemy</li>
-      <li><strong data-i18n="about.certSpigot"></strong> – Stephen King</li>
-      <li><strong data-i18n="about.certmentoring"></strong><p data-i18n="about.university"></p></li>
-    </ul>
-  </div>
-
-  <!-- Interests -->
-  <div class="card fade-in delay-4">
-    <h3><i class="fas fa-heart"></i> <span data-i18n="about.interests"></span></h3>
-    <ul>
-      <li data-i18n="about.interest1"></li>
-      <li data-i18n="about.interest2"></li>
-      <li data-i18n="about.interest3"></li>
-    </ul>
-  </div>
-</div>
-
-  <div style="text-align:center; margin-top:2rem;">
-    <a href="mailto:marcosf.varelam@gmail.com?Subject=CV%20Request" class="btn-primary" data-i18n="about.requestCV"></a>
-  </div><br>
-  <p><span data-i18n="about.notWorking"></span> marcosf.varelam@gmail.com</p>
-</section>
-</main>
-
-<footer>
-  <p>&copy; 2025 Marcos Varela</p>
-  <div class="footer-icons">
-    <a href="https://github.com/marcosvarela5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/marcosvarela5" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-  </div>
-  <p><span data-i18n="footer.contactMe"></span> marcosf.varelam@gmail.com</p>
-</footer>
-
-<script src="assets/js/menumobile.js"></script>
-<script src="assets/js/lang.js"></script>
+  <script src="assets/js/menumobile.js"></script>
+  <script src="assets/js/lang.js"></script>
 
 </body>
+
 </html>
