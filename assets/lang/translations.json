@@ -1,0 +1,176 @@
+{
+  "en": {
+    "menu": {
+      "home": "Home",
+      "cv": "CV",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "map": "Travel Map!"
+    },
+    "footer": {
+      "contactMe": "Or contact me on:"
+    },
+    "index": {
+      "hello": "Hello, I'm",
+      "role": "Software Developer",
+      "aboutTitle": "About Me",
+      "about1": "I am a junior software developer passionate about applying software solutions to real-world challenges. Backend development is my strength, and I particularly enjoy working with the Spring framework, though I am also experienced in .NET. I love exploring new and optimal approaches to the problems I encounter daily, and I am always eager to learn new technologies. Additionally, I have a solid foundation in frontend development using frameworks such as ASP.NET and React.",
+      "about2": "Additionally, I have certified involvement in mentoring programs at my university, where I guided new students through that challenging but definitely fantastic time in their lives, which helped me develop strong teamwork and leadership skills.",
+      "about3": "In my free time, I fully enjoy nature — fishing, hiking in the mountains, and spending nights in the wilderness. Whenever possible, I love sharing these adventures with my beloved dog.",
+      "visitedCountries": "Visited countries"
+    },
+    "contact": {
+      "contactMe": "Contact Me",
+      "contactText": "If you’d like to get in touch, feel free to email me or connect via LinkedIn or GitHub."
+    },
+    "404": {
+      "oops": "Oops! The page you are looking for does not exist.",
+      "backHome": "Back to Home"
+    },
+    "portfolio": {
+      "someProjects": "Some of my projects",
+      "ongoing": "Currently ongoing...",
+      "project1Title": "Edamam API Android App (outdated)",
+      "project1Desc": "A simple Android app to search for recipes using the Flutter framework and the Edamam API.",
+      "project2Title": "Sports Trial Management",
+      "project2Desc": "Sports trial management web application developed using Spring and React. My role in this project was primarily focused on backend development, although I also contributed significantly to the frontend.",
+      "project3Title": "Event Management",
+      "project3Desc": "Event organization app developed in C# using .NET and Entity Framework. I worked on both the backend and the frontend, mainly focusing on the backend. More information can be found in the Memoria.pdf document in the repository.",
+      "project4Title": "Simple Web Server",
+      "project4Desc": "Simple web server implemented in Java. This project was created several years ago while learning the basics of sockets and web server development.",
+      "project5Title": "Heritage Hub",
+      "project5Desc": "A web application designed to help authorities and archaeologists protect historical heritage in collaboration with metal detectorists. This app will consist of a platform which will allow everyone to register their finds with a large amount of relevant data."
+    },
+    "about": {
+      "cvTitle": "Curriculum Vitae",
+      "intro": "I am Marcos Varela, a junior backend developer passionate about building clean, scalable solutions using Java Spring Boot and .NET. I also enjoy frontend technologies like React and ASP.NET and I'm working hard on improving my skills to become a Full Stack.\nHere is a brief overview of my professional profile.",
+      "technicalSkills": "Technical Skills",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "otherTools": "Other Tools",
+      "education": "Education",
+      "softSkills": "Soft Skills",
+      "languages": "Languages",
+      "certifications": "Certifications & Courses",
+      "interests": "Interests",
+      "requestCV": "Request full CV",
+      "notWorking": "Not working? Contact me at:"
+    }
+  },
+  "es": {
+    "menu": {
+      "home": "Inicio",
+      "cv": "CV",
+      "portfolio": "Portafolio",
+      "contact": "Contacto",
+      "map": "¡Mapa de viajes!"
+    },
+    "footer": {
+      "contactMe": "O contáctame en:"
+    },
+    "index": {
+      "hello": "Hola, soy",
+      "role": "Desarrollador de Software",
+      "aboutTitle": "Sobre mí",
+      "about1": "Soy un desarrollador de software junior apasionado por aplicar soluciones tecnológicas a problemas reales. El desarrollo backend es mi punto fuerte, y disfruto especialmente trabajando con el framework Spring, aunque también tengo experiencia en .NET. Me encanta explorar enfoques nuevos y óptimos a los problemas que encuentro a diario, y siempre estoy deseando aprender nuevas tecnologías. Además, tengo una base sólida en desarrollo frontend usando frameworks como ASP.NET y React.",
+      "about2": "Además, he participado como mentor certificado en programas universitarios, donde guié a estudiantes de nuevo ingreso durante esa etapa desafiante pero, sin duda, fantástica de sus vidas, lo que me ayudó a desarrollar sólidas habilidades de trabajo en equipo y liderazgo.",
+      "about3": "En mi tiempo libre disfruto plenamente de la naturaleza: pesca, senderismo en la montaña y pasar noches al aire libre. Siempre que puedo, me encanta compartir estas aventuras con mi querido perro.",
+      "visitedCountries": "Países visitados"
+    },
+    "contact": {
+      "contactMe": "Contáctame",
+      "contactText": "Si quieres ponerte en contacto, no dudes en enviarme un email o conectarte vía LinkedIn o GitHub."
+    },
+    "404": {
+      "oops": "¡Vaya! La página que buscas no existe.",
+      "backHome": "Volver al inicio"
+    },
+    "portfolio": {
+      "someProjects": "Algunos de mis proyectos",
+      "ongoing": "Actualmente en desarrollo...",
+      "project1Title": "Aplicación Android Edamam API (obsoleta)",
+      "project1Desc": "Una app sencilla de Android para buscar recetas usando Flutter y la API de Edamam.",
+      "project2Title": "Gestión de Pruebas Deportivas",
+      "project2Desc": "Aplicación web de gestión de pruebas deportivas desarrollada con Spring y React. Mi papel principal en este proyecto fue el desarrollo backend, aunque también contribuí significativamente al frontend.",
+      "project3Title": "Gestión de Eventos",
+      "project3Desc": "Aplicación de organización de eventos desarrollada en C# con .NET y Entity Framework. Trabajé tanto en el backend como en el frontend, con especial foco en el backend. Más información en el documento Memoria.pdf en el repositorio.",
+      "project4Title": "Servidor Web Simple",
+      "project4Desc": "Servidor web simple implementado en Java. Este proyecto fue creado hace varios años mientras aprendía los fundamentos de los sockets y del desarrollo de servidores web.",
+      "project5Title": "Heritage Hub",
+      "project5Desc": "Aplicación web diseñada para ayudar a las autoridades y arqueólogos a proteger el patrimonio histórico en colaboración con detectores de metales. Esta app consistirá en una plataforma que permitirá registrar hallazgos con una gran cantidad de datos relevantes."
+    },
+    "about": {
+      "cvTitle": "Currículum Vitae",
+      "intro": "Soy Marcos Varela, un desarrollador backend junior apasionado por construir soluciones limpias y escalables con Java Spring Boot y .NET. También disfruto de las tecnologías frontend como React y ASP.NET, y estoy trabajando duro para mejorar mis habilidades y convertirme en Full Stack.\nAquí tienes un breve resumen de mi perfil profesional.",
+      "technicalSkills": "Habilidades Técnicas",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "otherTools": "Otras Herramientas",
+      "education": "Educación",
+      "softSkills": "Habilidades Blandas",
+      "languages": "Idiomas",
+      "certifications": "Certificaciones y Cursos",
+      "interests": "Intereses",
+      "requestCV": "Solicitar CV completo",
+      "notWorking": "¿No funciona? Contáctame en:"
+    }
+  },
+  "de": {
+    "menu": {
+      "home": "Startseite",
+      "cv": "Lebenslauf",
+      "portfolio": "Portfolio",
+      "contact": "Kontakt",
+      "map": "Reisekarte!"
+    },
+    "footer": {
+      "contactMe": "Oder kontaktiere mich unter:"
+    },
+    "index": {
+      "hello": "Hallo, ich bin",
+      "role": "Softwareentwickler",
+      "aboutTitle": "Über mich",
+      "about1": "Ich bin ein Junior-Softwareentwickler, der leidenschaftlich gerne Softwarelösungen für reale Herausforderungen einsetzt. Backend-Entwicklung ist meine Stärke, und ich arbeite besonders gerne mit dem Spring-Framework, habe aber auch Erfahrung mit .NET. Ich liebe es, neue und optimale Ansätze für die Probleme zu finden, die mir täglich begegnen, und bin immer bereit, neue Technologien zu lernen. Darüber hinaus habe ich ein solides Fundament in der Frontend-Entwicklung mit Frameworks wie ASP.NET und React.",
+      "about2": "Darüber hinaus habe ich zertifiziert an Mentoring-Programmen meiner Universität teilgenommen, bei denen ich neue Studierende durch diese herausfordernde, aber definitiv großartige Zeit ihres Lebens begleitet habe, was mir geholfen hat, starke Team- und Führungsfähigkeiten zu entwickeln.",
+      "about3": "In meiner Freizeit genieße ich die Natur – Angeln, Wandern in den Bergen und Nächte in der Wildnis zu verbringen. Wann immer möglich, teile ich diese Abenteuer gerne mit meinem geliebten Hund.",
+      "visitedCountries": "Besuchte Länder"
+    },
+    "contact": {
+      "contactMe": "Kontaktiere mich",
+      "contactText": "Wenn du mit mir in Kontakt treten möchtest, kannst du mir gerne eine E-Mail schicken oder dich über LinkedIn oder GitHub verbinden."
+    },
+    "404": {
+      "oops": "Ups! Die gesuchte Seite existiert nicht.",
+      "backHome": "Zurück zur Startseite"
+    },
+    "portfolio": {
+      "someProjects": "Einige meiner Projekte",
+      "ongoing": "Derzeit in Arbeit...",
+      "project1Title": "Edamam API Android App (veraltet)",
+      "project1Desc": "Eine einfache Android-App zur Rezeptsuche mit Flutter und der Edamam-API.",
+      "project2Title": "Sportveranstaltungsverwaltung",
+      "project2Desc": "Webanwendung zur Verwaltung von Sportveranstaltungen, entwickelt mit Spring und React. Meine Hauptaufgabe in diesem Projekt war die Backend-Entwicklung, obwohl ich auch wesentlich zum Frontend beigetragen habe.",
+      "project3Title": "Eventverwaltung",
+      "project3Desc": "Eventverwaltungs-App, entwickelt in C# mit .NET und Entity Framework. Ich arbeitete sowohl am Backend als auch am Frontend, mit Schwerpunkt auf dem Backend. Weitere Informationen findest du im Dokument Memoria.pdf im Repository.",
+      "project4Title": "Einfacher Webserver",
+      "project4Desc": "Einfacher Webserver in Java implementiert. Dieses Projekt entstand vor einigen Jahren, als ich die Grundlagen von Sockets und Webserver-Entwicklung lernte.",
+      "project5Title": "Heritage Hub",
+      "project5Desc": "Eine Webanwendung, die Behörden und Archäologen bei der Erhaltung des historischen Erbes in Zusammenarbeit mit Sondengängern unterstützt. Diese App wird eine Plattform enthalten, auf der alle ihre Funde mit vielen relevanten Daten registrieren können."
+    },
+    "about": {
+      "cvTitle": "Lebenslauf",
+      "intro": "Ich bin Marcos Varela, ein Junior-Backend-Entwickler, der leidenschaftlich saubere, skalierbare Lösungen mit Java Spring Boot und .NET baut. Ich arbeite auch gerne mit Frontend-Technologien wie React und ASP.NET und arbeite hart daran, meine Fähigkeiten zu verbessern, um Full Stack zu werden.\nHier ein kurzer Überblick über mein berufliches Profil.",
+      "technicalSkills": "Technische Fähigkeiten",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "otherTools": "Weitere Tools",
+      "education": "Ausbildung",
+      "softSkills": "Soft Skills",
+      "languages": "Sprachen",
+      "certifications": "Zertifikate & Kurse",
+      "interests": "Interessen",
+      "requestCV": "Vollständigen Lebenslauf anfordern",
+      "notWorking": "Funktioniert nicht? Kontaktiere mich unter:"
+    }
+  }
+}

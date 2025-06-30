@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,12 +15,24 @@
     <i class="fas fa-bars"></i>
   </button>
   <ul id="main-menu" class="menu">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">CV</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="map.html">Travel Map!</a></li>
+    <li><a href="index.html" class="active" data-i18n="menu.home"></a></li>
+    <li><a href="about.html" data-i18n="menu.cv"></a></li>
+    <li><a href="portfolio.html" data-i18n="menu.portfolio"></a></li>
+    <li><a href="contact.html" data-i18n="menu.contact"></a></li>
+    <li><a href="map.html" data-i18n="menu.map"></a></li>
   </ul>
+  <div class="lang-selector">
+  <button data-set-lang="en" aria-label="English">
+    <img src="assets/img/flags/gb.png" alt="English" class="flag-icon">
+  </button>
+  <button data-set-lang="es" aria-label="Español">
+    <img src="assets/img/flags/es.png" alt="Español" class="flag-icon">
+  </button>
+  <button data-set-lang="de" aria-label="Deutsch">
+    <img src="assets/img/flags/de.png" alt="Deutsch" class="flag-icon">
+  </button>
+</div>
+
 </nav>
   </header>
 
@@ -29,8 +41,8 @@
   <section id="home" class="section-home">
     <div class="home-content">
       <div class="home-text">
-        <h1>Hello, I'm <span>Marcos!</span></h1>
-        <p>Software Developer</p>
+        <h1><span data-i18n="index.hello"></span> <span>Marcos!</span></h1>
+        <p data-i18n="index.role"></p>
       </div>
       <div class="home-img">
         <img src="assets/img/portada.png" alt="Imagen de portada" />
@@ -40,17 +52,11 @@
 
  
 <section id="about-me" class="section-about">
-  <h2>About Me</h2>
+  <h2 data-i18n="index.aboutTitle"></h2>
   <div class="about-text">
-    <p>
-      I'm a junior software developer passionate about thinking about how can I apply software solutions to the real world. Backend is my strength, with the Spring framework as my favorite tool, though I have also learned .NET. I enjoy thinking about new and optimal solutions to the problems I face daily, and I love learning new technologies. I also have a basic knowledge of frontend development using frameworks like ASP.NET or React.
-    </p>
-    <p>
-      Additionally, I have certified involvement in mentoring programs at my university, where I guided new students through that challenging but definitely fantastic time in their lives, which helped me develop strong teamwork and leadership skills.
-    </p>
-    <p>
-      In my free time, I fully enjoy nature — fishing, hiking in the mountains, and spending nights in the wilderness. Whenever possible, I love sharing these adventures with my beloved dog.
-    </p>
+    <p data-i18n="index.about1"></p>
+    <p data-i18n="index.about2"></p>
+    <p data-i18n="index.about3"></p>
   </div>
   <div class="about-photo">
     <img src="assets/img/happy.png" alt="Imagen de Happy" />
@@ -73,8 +79,11 @@
         <i class="fab fa-linkedin"></i>
       </a>
     </div>
+    <p><span data-i18n="footer.contactMe"></span> marcosf.varelam@gmail.com</p>
   </footer>
 
   <script src="assets/js/menumobile.js"></script>
+  <script src="assets/js/lang.js"></script>
+
 </body>
 </html>
