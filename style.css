@@ -526,6 +526,49 @@ footer {
   z-index: 0 !important;
 }
 
+/* Modo oscuro */
+body[data-theme="dark"] {
+  background-color: #1a202c;
+  color: #f0f0f0;
+}
+
+body[data-theme="dark"] header {
+  background-color: #2d3748;
+}
+
+body[data-theme="dark"] .menu li a {
+  color: #f0f0f0;
+}
+
+body[data-theme="dark"] .menu li a.active,
+body[data-theme="dark"] .menu li a:hover {
+  color: #90cdf4;
+  border-color: #90cdf4;
+}
+
+body[data-theme="dark"] .card {
+  background: #2d3748;
+  color: #f0f0f0;
+}
+
+body[data-theme="dark"] .btn-primary {
+  background-color: #4299e1;
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .btn-primary:hover {
+  background-color: #3182ce;
+}
+
+body[data-theme="dark"] footer {
+  background-color: #2d3748;
+}
+
+body[data-theme="dark"] .portfolio-image .overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
 /*Responsive styles*/
 
 @media (max-width: 600px) {
