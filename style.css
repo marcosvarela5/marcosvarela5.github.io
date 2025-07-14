@@ -436,13 +436,16 @@ footer {
 
 
 .portfolio-grid-single {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
 }
 
 .portfolio-item {
-  text-align: center;
+  width: 100%;
 }
+
 
 /* Igualar altura de las imágenes sin romper el grid */
 .portfolio-image {
