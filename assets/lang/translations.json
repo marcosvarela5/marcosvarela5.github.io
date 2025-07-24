@@ -14,7 +14,7 @@
       "hello": "Hello, I'm",
       "role": "Software engineer",
       "aboutTitle": "About Me",
-      "about1": "I am a junior software engineer passionate about applying software solutions to real-world challenges. Backend development is my strength, and I particularly enjoy working with the Spring framework, though I am also experienced in .NET. I love exploring new and optimal approaches to the problems I encounter daily, and I am always eager to learn new technologies. Additionally, I have a solid foundation in frontend development using frameworks such as ASP.NET and React.",
+      "about1": "I am a junior software engineer passionate about applying software solutions to real-world challenges. Backend development is my strength, and I particularly enjoy working with the Spring framework, though I am also experienced in .NET. I love exploring new and optimal approaches to the problems I encounter daily, and I am always eager to learn new technologies. Additionally, I have a foundation in frontend development using frameworks such as Vue and React.",
       "about2": "Additionally, I have certified involvement in mentoring programs at my university, where I guided new students through that challenging but definitely fantastic time in their lives, which helped me develop strong teamwork and leadership skills.",
       "about3": "In my free time, I fully enjoy nature — fishing, hiking in the mountains, and spending nights in the wilderness. Whenever possible, I love sharing these adventures with my beloved dog.",
       "visitedCountries": "Visited countries"
@@ -45,7 +45,7 @@
     },
     "about": {
       "cvTitle": "Curriculum Vitae",
-      "intro": "I am Marcos Varela, a junior backend engineer passionate about building clean, scalable solutions using Java Spring Boot and .NET. I also enjoy frontend technologies like React and ASP.NET and I'm working hard on improving my skills to become a Full Stack.\nHere is a brief overview of my professional profile.",
+      "intro": "I am Marcos Varela, a junior backend engineer passionate about building clean, scalable solutions using Java Spring Boot and .NET. I also enjoy frontend technologies like React and Vue and I'm working hard on improving my skills to become a Full Stack.\nHere is a brief overview of my professional profile.",
       "technicalSkills": "Technical Skills",
       "backend": "Backend",
       "frontend": "Frontend",
@@ -98,7 +98,7 @@
       "hello": "Hola, soy",
       "role": "Ingeniero en desarrollo de software",
       "aboutTitle": "Sobre mí",
-      "about1": "Soy un ingeniero de desarrollo software junior apasionado por aplicar soluciones tecnológicas a problemas reales. El desarrollo backend es mi punto fuerte, y disfruto especialmente trabajando con el framework Spring, aunque también tengo experiencia en .NET. Me encanta explorar enfoques nuevos y óptimos a los problemas que encuentro a diario, y siempre estoy deseando aprender nuevas tecnologías. Además, tengo una base sólida en desarrollo frontend usando frameworks como ASP.NET y React.",
+      "about1": "Soy un ingeniero de desarrollo software junior apasionado por aplicar soluciones tecnológicas a problemas reales. El desarrollo backend es mi punto fuerte, y disfruto especialmente trabajando con el framework Spring, aunque también tengo experiencia en .NET. Me encanta explorar enfoques nuevos y óptimos a los problemas que encuentro a diario, y siempre estoy deseando aprender nuevas tecnologías. Además, tengo una base en desarrollo frontend usando frameworks como Vue y React.",
       "about2": "Además, he participado como mentor certificado en programas universitarios, donde guié a estudiantes de nuevo ingreso durante esa etapa desafiante pero, sin duda, fantástica de sus vidas, lo que me ayudó a desarrollar sólidas habilidades de trabajo en equipo y liderazgo.",
       "about3": "En mi tiempo libre disfruto plenamente de la naturaleza: pesca, senderismo en la montaña y pasar noches al aire libre. Siempre que puedo, me encanta compartir estas aventuras con mi perro.",
       "visitedCountries": "Países visitados"
@@ -129,7 +129,7 @@
     },
     "about": {
       "cvTitle": "Currículum Vitae",
-      "intro": "Soy Marcos Varela, un ingeniero en desarrollo de software junior apasionado por construir soluciones limpias y escalables con Java Spring Boot y .NET. También disfruto de las tecnologías frontend como React y ASP.NET, y estoy trabajando duro para mejorar mis habilidades y convertirme en Full Stack.\nAquí tienes un breve resumen de mi perfil profesional.",
+      "intro": "Soy Marcos Varela, un ingeniero en desarrollo de software junior apasionado por construir soluciones limpias y escalables con Java Spring Boot y .NET. También disfruto de las tecnologías frontend como React y Vue, y estoy trabajando duro para mejorar mis habilidades y convertirme en Full Stack.\nAquí tienes un breve resumen de mi perfil profesional.",
       "technicalSkills": "Habilidades Técnicas",
       "backend": "Backend",
       "frontend": "Frontend",
@@ -182,7 +182,7 @@
       "hello": "Hallo, ich bin",
       "role": "Ingenieur für Softwareentwicklung",
       "aboutTitle": "Über mich",
-      "about1": "Ich bin ein Junior Ingenieur für Softwareentwicklung, der leidenschaftlich gerne Softwarelösungen für reale Herausforderungen einsetzt. Backend-Entwicklung ist meine Stärke, und ich arbeite besonders gerne mit dem Spring-Framework, habe aber auch Erfahrung mit .NET. Ich liebe es, neue und optimale Ansätze für die Probleme zu finden, die mir täglich begegnen, und bin immer bereit, neue Technologien zu lernen. Darüber hinaus habe ich ein solides Fundament in der Frontend-Entwicklung mit Frameworks wie ASP.NET und React.",
+      "about1": "Ich bin ein Junior Ingenieur für Softwareentwicklung, der leidenschaftlich gerne Softwarelösungen für reale Herausforderungen einsetzt. Backend-Entwicklung ist meine Stärke, und ich arbeite besonders gerne mit dem Spring-Framework, habe aber auch Erfahrung mit .NET. Ich liebe es, neue und optimale Ansätze für die Probleme zu finden, die mir täglich begegnen, und bin immer bereit, neue Technologien zu lernen. Darüber hinaus habe ich ein solides Fundament in der Frontend-Entwicklung mit Frameworks wie Vue und React.",
       "about2": "Darüber hinaus habe ich zertifiziert an Mentoring-Programmen meiner Universität teilgenommen, bei denen ich neue Studierende durch diese herausfordernde, aber definitiv großartige Zeit ihres Lebens begleitet habe, was mir geholfen hat, starke Team- und Führungsfähigkeiten zu entwickeln.",
       "about3": "In meiner Freizeit genieße ich die Natur – Angeln, Wandern in den Bergen und Nächte in der Wildnis zu verbringen. Wann immer möglich, teile ich diese Abenteuer gerne mit meinem geliebten Hund.",
       "visitedCountries": "Besuchte Länder"
@@ -213,7 +213,7 @@
     },
     "about": {
       "cvTitle": "Lebenslauf",
-      "intro": "Ich bin Marcos Varela, ein Ingenieur für Softwareentwicklung, der leidenschaftlich saubere, skalierbare Lösungen mit Java Spring Boot und .NET erstellt. Ich arbeite auch gerne mit Frontend-Technologien wie React und ASP.NET und arbeite hart daran, meine Fähigkeiten zu verbessern, um Full Stack zu werden.\nHier ein kurzer Überblick über mein berufliches Profil.",
+      "intro": "Ich bin Marcos Varela, ein Ingenieur für Softwareentwicklung, der leidenschaftlich saubere, skalierbare Lösungen mit Java Spring Boot und .NET erstellt. Ich arbeite auch gerne mit Frontend-Technologien wie React und Vue und arbeite hart daran, meine Fähigkeiten zu verbessern, um Full Stack zu werden.\nHier ein kurzer Überblick über mein berufliches Profil.",
       "technicalSkills": "Technische Fähigkeiten",
       "backend": "Backend",
       "frontend": "Frontend",
