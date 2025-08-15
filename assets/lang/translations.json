@@ -38,7 +38,7 @@
       "project3Desc": "Event organization app developed in C# using .NET and Entity Framework. I worked on both the backend and the frontend, mainly focusing on the backend. More information can be found in the Memoria.pdf document in the repository.",
       "project4Title": "Simple Web Server",
       "project4Desc": "Simple web server implemented in Java. This project was created several years ago while learning the basics of sockets and web server development.",
-      "project5Title": "Heritage Hub",
+      "project5Title": "DigReport",
       "project5Desc": "A web application designed to help authorities and archaeologists protect historical heritage in collaboration with metal detectorists. This app will consist of a platform which will allow everyone to register their finds with a large amount of relevant data.",
       "project6Title": "AIC Members",
       "project6Desc": "Web application for managing member registrations, cancellations, and information of the cultural association in my hometown, developed with Spring Boot and Vue.js in TypeScript. This project is a work in progress and is under active development."
@@ -124,7 +124,7 @@
       "project3Desc": "Aplicación de organización de eventos desarrollada en C# con .NET y Entity Framework. Trabajé tanto en el backend como en el frontend, con especial foco en el backend. Más información en el documento Memoria.pdf en el repositorio.",
       "project4Title": "Servidor Web Simple",
       "project4Desc": "Servidor web simple implementado en Java. Este proyecto fue creado hace varios años mientras aprendía los fundamentos de los sockets y del desarrollo de servidores web.",
-      "project5Title": "Heritage Hub",
+      "project5Title": "DigReport",
       "project5Desc": "Aplicación web diseñada para ayudar a las autoridades y arqueólogos a proteger el patrimonio histórico en colaboración con detectores de metales. Esta app consistirá en una plataforma que permitirá registrar hallazgos con una gran cantidad de datos relevantes.",
       "project6Title": "AIC Members",
       "project6Desc": "Aplicación web de gestión de altas, bajas e información de los socios de la asociación cultural de mi pueblo, desarrollada con Spring Boot y Vue.js in TypeScript. Este proyecto es un trabajo en curso y se encuentra en desarrollo activo."
@@ -210,7 +210,7 @@
       "project3Desc": "Eventverwaltungs-App, entwickelt in C# mit .NET und Entity Framework. Ich arbeitete sowohl am Backend als auch am Frontend, mit Schwerpunkt auf dem Backend. Weitere Informationen findest du im Dokument Memoria.pdf im Repository.",
       "project4Title": "Einfacher Webserver",
       "project4Desc": "Einfacher Webserver in Java implementiert. Dieses Projekt entstand vor einigen Jahren, als ich die Grundlagen von Sockets und Webserver-Entwicklung lernte.",
-      "project5Title": "Heritage Hub",
+      "project5Title": "DigReport",
       "project5Desc": "Eine Webanwendung, die Behörden und Archäologen bei der Erhaltung des historischen Erbes in Zusammenarbeit mit Sondengängern unterstützt. Diese App wird eine Plattform enthalten, auf der alle ihre Funde mit vielen relevanten Daten registrieren können.",
       "project6Title": "AIC-Mitglieder",
       "project6Desc": "Webanwendung zur Verwaltung von Anmeldungen, Abmeldungen und Informationen der Mitglieder des Kulturvereins in meinem Heimatort, entwickelt mit Spring Boot und Vue.js in TypeScript. Dieses Projekt ist ein laufendes Vorhaben und befindet sich in aktiver Entwicklung."

@@ -536,6 +536,28 @@ footer {
   width: 100%;
 }
 
+/* Permitir mostrar la overlay cuando el item esté "abierto" en móvil */
+.portfolio-item.revealed .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Opcional: mismo efecto de zoom cuando está revelado */
+.portfolio-item.revealed .portfolio-image img {
+  transform: scale(1.1);
+}
+
+/* Importante: que la overlay no “se coma” el toque del 2º click */
+.portfolio-image .overlay {
+  pointer-events: none;
+}
+
+/* Asegura que el <a> ocupa todo el bloque clicable */
+.portfolio-item>a {
+  display: block;
+}
+
+
 /* Igualar altura imágenes */
 .portfolio-image {
   aspect-ratio: 4/3;
