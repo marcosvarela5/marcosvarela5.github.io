@@ -21,7 +21,7 @@
     },
     "contact": {
       "contactMe": "Contact Me",
-      "contactText": "If you’d like to get in touch, feel free to email me or connect via LinkedIn or GitHub."
+      "contactText": "If you'd like to get in touch, feel free to email me or connect via LinkedIn or GitHub."
     },
     "404": {
       "oops": "Oops! The page you are looking for does not exist.",
@@ -29,9 +29,11 @@
     },
     "portfolio": {
       "someProjects": "Some of my projects",
+      "someProjectsDesc": "Here are some of the projects I've worked on, many of which I'm still updating. Click on each one for more details or to see the source code on GitHub.",
       "ongoing": "Currently ongoing...",
-      "project1Title": "Edamam API Android App (outdated)",
-      "project1Desc": "A simple Android app to search for recipes using the Flutter framework and the Edamam API.",
+      "ongoingDesc": "Projects that I am currently working on, but that do not yet have enough substance to be showcased in the main portfolio as complete projects.",
+      "project1Title": "Portfolio Website Source Code",
+      "project1Desc": "This website's source code, built with HTML, CSS and vanilla JavaScript and hosted on GitHub Pages.",
       "project2Title": "Sports Trial Management",
       "project2Desc": "Sports trial management web application developed using Spring and React. My role in this project was primarily focused on backend development, although I also contributed significantly to the frontend.",
       "project3Title": "Event Management",
@@ -39,21 +41,24 @@
       "project4Title": "Simple Web Server",
       "project4Desc": "Simple web server implemented in Java. This project was created several years ago while learning the basics of sockets and web server development.",
       "project5Title": "DigReport",
-      "project5Desc": "A web application designed to help authorities and archaeologists protect historical heritage in collaboration with metal detectorists. This app will consist of a platform which will allow everyone to register their finds with a large amount of relevant data.",
+      "project5Desc": "A web application designed to help authorities and archaeologists protect historical heritage in collaboration with metal detectorists. This app will allow everyone to register their finds with a large amount of relevant data.",
       "project6Title": "AIC Members",
-      "project6Desc": "Web application for managing member registrations, cancellations, and information of the cultural association in my hometown, developed with Spring Boot and Vue.js in TypeScript. This project is a work in progress and is under active development."
+      "project7Title": "AVC Admin",
+      "project7Desc": "Admin dashboard for my hometown neighborhood association to manage members and automatize proccesses, built using only Node.js and vanilla JavaScript.",
+      "project6Desc": "Web application for managing member registrations, cancellations, and information of the cultural association in my hometown, developed with Spring Boot and Vue.js in TypeScript."
     },
     "about": {
       "cvTitle": "Curriculum Vitae",
       "intro": "I am Marcos Varela, a software engineer passionate about building clean, scalable solutions using Java Spring Boot and .NET. I also enjoy frontend technologies like React and Vue and I'm working hard on improving my skills to become a Full Stack.\nHere is a brief overview of my professional profile.",
       "technicalSkills": "Technical Skills",
+      "professionalExperience": "Professional Experience",
       "backend": "Backend",
       "frontend": "Frontend",
       "otherTools": "Other Tools",
       "restApis": "RESTful APIs",
       "frontendStack": "HTML, CSS, JavaScript",
       "databases": "PostgreSQL & MySQL",
-      "cicd": "CI/CD: Redmine, Jenkins, SonarQube",
+      "cicd": "CI/CD: Azure, Redmine, Jenkins, SonarQube",
       "container": "Containerization: Docker",
       "automation": "Automation: Maven",
       "versioning": "Git, Agile methodologies - Kanban, Scrum",
@@ -72,7 +77,7 @@
       "english": "C1 operational proficiency. Comfortable in technical conversations and interviews.",
       "french": "Basics",
       "portuguese": "Proficient (Galician native)",
-      "german": "Currently studying (aiming B1)",
+      "german": "Currently studying (aiming B1 in maximum two years)",
       "certifications": "Certifications & Courses",
       "certJava": "Basics of Java",
       "certSpigot": "Spigot API Development",
@@ -82,7 +87,8 @@
       "interest2": "Exploring new cultures",
       "interest3": "Graphic design for social media and podcasts",
       "requestCV": "Request full CV",
-      "notWorking": "Not working? Contact me at:"
+      "notWorking": "Not working? Contact me at:",
+      "aldabaExperience": "Contributed to industrial management software for clients in energy, metallurgy, and transportation sectors. Automated repetitive tasks and improved desktop-web synchronization. Developed production-ready features enhancing business workflows. Created reports using Crystal Reports and managed databases with SQL Server. Built backend components with .NET and Entity Framework."
     }
   },
   "es": {
@@ -115,9 +121,11 @@
     },
     "portfolio": {
       "someProjects": "Algunos de mis proyectos",
+      "someProjectsDesc": "Aquí tienes algunos de los proyectos en los que he trabajado, y muchos los sigo actualizando. Haz clic en cada uno para obtener más detalles o ver el código fuente en GitHub.",
       "ongoing": "Actualmente en desarrollo...",
-      "project1Title": "Aplicación Android Edamam API (obsoleta)",
-      "project1Desc": "Una app sencilla de Android para buscar recetas usando Flutter y la API de Edamam.",
+      "ongoingDesc": "Proyectos en los que actualmente trabajo, sin la suficiente entidad para mostrarlos aún en el portafolio principal como proyectos completos.",
+      "project1Title": "Código fuente del sitio web del portafolio",
+      "project1Desc": "Este código fuente del sitio web, construido con HTML, CSS y JavaScript puro, está alojado en GitHub Pages.",
       "project2Title": "Gestión de Pruebas Deportivas",
       "project2Desc": "Aplicación web de gestión de pruebas deportivas desarrollada con Spring y React. Mi papel principal en este proyecto fue el desarrollo backend, aunque también contribuí significativamente al frontend.",
       "project3Title": "Gestión de Eventos",
@@ -125,15 +133,18 @@
       "project4Title": "Servidor Web Simple",
       "project4Desc": "Servidor web simple implementado en Java. Este proyecto fue creado hace varios años mientras aprendía los fundamentos de los sockets y del desarrollo de servidores web.",
       "project5Title": "DigReport",
-      "project5Desc": "Aplicación web diseñada para ayudar a las autoridades y arqueólogos a proteger el patrimonio histórico en colaboración con detectores de metales. Esta app consistirá en una plataforma que permitirá registrar hallazgos con una gran cantidad de datos relevantes.",
+      "project5Desc": "Aplicación web diseñada para ayudar a las autoridades y arqueólogos a proteger el patrimonio histórico en colaboración con detectores de metales. Esta app permitirá registrar hallazgos con una gran cantidad de datos relevantes.",
       "project6Title": "AIC Members",
-      "project6Desc": "Aplicación web de gestión de altas, bajas e información de los socios de la asociación cultural de mi pueblo, desarrollada con Spring Boot y Vue.js in TypeScript. Este proyecto es un trabajo en curso y se encuentra en desarrollo activo."
+      "project7Title": "AVC Admin",
+      "project7Desc": "Panel de administración para la asociación de vecinos de mi pueblo natal para gestionar socios y automatizar procesos, construido usando solo Node.js y JavaScript puro.",
+      "project6Desc": "Aplicación web de gestión de altas, bajas e información de los socios de la asociación cultural de mi pueblo, desarrollada con Spring Boot y Vue.js in TypeScript."
     },
     "about": {
       "cvTitle": "Currículum Vitae",
       "intro": "Soy Marcos Varela, un ingeniero en desarrollo de software apasionado por construir soluciones limpias y escalables con Java Spring Boot y .NET. También disfruto de las tecnologías frontend como React y Vue, y estoy trabajando duro para mejorar mis habilidades y convertirme en Full Stack.\nAquí tienes un breve resumen de mi perfil profesional.",
       "technicalSkills": "Habilidades Técnicas",
       "backend": "Backend",
+      "professionalExperience": "Experiencia Profesional",
       "frontend": "Frontend",
       "otherTools": "Otras Herramientas",
       "container": "Contenedores: Docker",
@@ -141,7 +152,7 @@
       "restApis": "APIs RESTful",
       "frontendStack": "HTML, CSS, JavaScript",
       "databases": "PostgreSQL y MySQL",
-      "cicd": "CI/CD: Redmine, Jenkins, SonarQube",
+      "cicd": "CI/CD: Azure, Redmine, Jenkins, SonarQube",
       "versioning": "Git, metodologías ágiles - Kanban, Scrum",
       "degree": "Grado en Ingeniería Informática - Ingeniería del Software",
       "university": "Universidad de A Coruña",
@@ -158,7 +169,7 @@
       "english": "Competencia operativa C1. Cómodo en conversaciones técnicas y entrevistas.",
       "french": "Básico",
       "portuguese": "Competente (gallego nativo)",
-      "german": "Actualmente estudiando (objetivo B1)",
+      "german": "Actualmente estudiando (objetivo B1 en máximo dos años)",
       "certifications": "Certificaciones y Cursos",
       "certJava": "Fundamentos de Java",
       "certSpigot": "Desarrollo con Spigot API",
@@ -168,7 +179,8 @@
       "interest2": "Explorar nuevas culturas",
       "interest3": "Diseño gráfico para redes sociales y podcasts",
       "requestCV": "Solicitar CV completo",
-      "notWorking": "¿No funciona? Contáctame en:"
+      "notWorking": "¿No funciona? Contáctame en:",
+      "aldabaExperience": "Desarrollé software de gestión industrial para clientes de energía, metalurgia y transporte. Automaticé flujos de trabajo, mejoré la sincronización del sistema y entregué funcionalidades listas para producción. Creé informes empresariales con Crystal Reports y desarrollé soluciones backend utilizando .NET y Entity Framework."
     }
   },
   "de": {
@@ -201,9 +213,11 @@
     },
     "portfolio": {
       "someProjects": "Einige meiner Projekte",
+      "someProjectsDesc": "Hier hast du einige der Projekte, an denen ich gearbeitet habe, von denen viele noch aktualisiert werden. Klicke auf jedes einzelne, um mehr Details zu erhalten oder den Quellcode auf GitHub zu sehen.",
       "ongoing": "Derzeit in Arbeit...",
-      "project1Title": "Edamam API Android App (veraltet)",
-      "project1Desc": "Eine einfache Android-App zur Rezeptsuche mit Flutter und der Edamam-API.",
+      "ongoingDesc": "Projekte, an denen ich derzeit arbeite, die aber noch nicht genügend Substanz haben, um sie im Hauptportfolio als vollständige Projekte zu präsentieren.",
+      "project1Title": "Portfolio-Website (Quellcode)",
+      "project1Desc": "Dieser Quellcode der Website wurde mit HTML, CSS und JavaScript erstellt und ist auf GitHub Pages gehostet.",
       "project2Title": "Sportveranstaltungsverwaltung",
       "project2Desc": "Webanwendung zur Verwaltung von Sportveranstaltungen, entwickelt mit Spring und React. Meine Hauptaufgabe in diesem Projekt war die Backend-Entwicklung, obwohl ich auch wesentlich zum Frontend beigetragen habe.",
       "project3Title": "Eventverwaltung",
@@ -213,7 +227,9 @@
       "project5Title": "DigReport",
       "project5Desc": "Eine Webanwendung, die Behörden und Archäologen bei der Erhaltung des historischen Erbes in Zusammenarbeit mit Sondengängern unterstützt. Diese App wird eine Plattform enthalten, auf der alle ihre Funde mit vielen relevanten Daten registrieren können.",
       "project6Title": "AIC-Mitglieder",
-      "project6Desc": "Webanwendung zur Verwaltung von Anmeldungen, Abmeldungen und Informationen der Mitglieder des Kulturvereins in meinem Heimatort, entwickelt mit Spring Boot und Vue.js in TypeScript. Dieses Projekt ist ein laufendes Vorhaben und befindet sich in aktiver Entwicklung."
+      "project7Title": "AVC Admin",
+      "project7Desc": "Admin-Dashboard für die Nachbarschaftsvereinigung meiner Heimatstadt zur Verwaltung von Mitgliedern und Automatisierung von Prozessen, gebaut nur mit Node.js und reinem JavaScript.",
+      "project6Desc": "Webanwendung zur Verwaltung von Anmeldungen, Abmeldungen und Informationen der Mitglieder des Kulturvereins in meinem Heimatort, entwickelt mit Spring Boot und Vue.js in TypeScript."
     },
     "about": {
       "cvTitle": "Lebenslauf",
@@ -222,12 +238,13 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "otherTools": "Weitere Tools",
+      "professionalExperience": "Berufserfahrung",
       "container": "Containerisierung: Docker",
       "automation": "Automatisierung: Maven",
       "restApis": "RESTful-APIs",
       "frontendStack": "HTML, CSS, JavaScript",
       "databases": "PostgreSQL & MySQL",
-      "cicd": "CI/CD: Redmine, Jenkins, SonarQube",
+      "cicd": "CI/CD: Azure, Redmine, Jenkins, SonarQube",
       "versioning": "Git, agile Methoden - Kanban, Scrum",
       "degree": "Ingenieurinformatik - Software Engineering",
       "university": "Universität A Coruña",
@@ -244,7 +261,7 @@
       "english": "C1 betriebliche Kompetenz. Sicher in technischen Gesprächen und Interviews.",
       "french": "Grundkenntnisse",
       "portuguese": "Fortgeschritten (galicischer Muttersprachler)",
-      "german": "Derzeit im Studium (Ziel B1)",
+      "german": "Derzeit im Studium (Ziel B1 in maximal zwei Jahren)",
       "certifications": "Zertifikate & Kurse",
       "certJava": "Grundlagen von Java",
       "certSpigot": "Spigot API Entwicklung",
@@ -254,7 +271,8 @@
       "interest2": "Neue Kulturen entdecken",
       "interest3": "Grafikdesign für soziale Medien und Podcasts",
       "requestCV": "Vollständigen Lebenslauf anfordern",
-      "notWorking": "Funktioniert nicht? Kontaktiere mich unter:"
+      "notWorking": "Funktioniert nicht? Kontaktiere mich unter:",
+      "aldabaExperience": "Beitrag zur industriellen Managementsoftware für Kunden aus den Bereichen Energie, Metallurgie und Transport. Automatisierte wiederkehrende Aufgaben und verbesserte die Desktop-Web-Synchronisierung. Entwickelte produktionsreife Funktionen zur Verbesserung der Geschäftsabläufe. Erstellte Berichte mit Crystal Reports und verwaltete Datenbanken mit SQL Server. Entwickelte Backend-Komponenten mit .NET und Entity Framework."
     }
   }
 }
