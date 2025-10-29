@@ -536,6 +536,22 @@ footer {
   width: 100%;
 }
 
+/* Aumentar espacio entre la descripción y la grid de proyectos */
+.portfolio-section h4 {
+  margin-bottom: 3rem;
+}
+
+/* Reducir tamaño de los proyectos en la sección ongoing (portfolio-grid-single) */
+.portfolio-grid-single .portfolio-item {
+  max-width: 350px; /* Limitar ancho del proyecto */
+  margin: 0 auto;
+}
+
+.portfolio-grid-single .portfolio-image img {
+  max-height: 250px; /* Limitar altura de la imagen */
+  object-fit: cover;
+}
+
 /* Permitir mostrar la overlay cuando el item esté "abierto" en móvil */
 .portfolio-item.revealed .overlay {
   opacity: 1;
@@ -545,6 +561,16 @@ footer {
 /* Opcional: mismo efecto de zoom cuando está revelado */
 .portfolio-item.revealed .portfolio-image img {
   transform: scale(1.1);
+}
+
+.portfolio-section h4 {
+  margin-bottom: 3rem; /* Aumentado de ~1rem a 3rem */
+}
+
+/* Alternativamente, puedes agregar espacio superior a la grid */
+.portfolio-grid,
+.portfolio-grid-single {
+  margin-top: 3rem;
 }
 
 /* Importante: que la overlay no “se coma” el toque del 2º click */
