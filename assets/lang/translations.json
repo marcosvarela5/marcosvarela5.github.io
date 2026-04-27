@@ -8,7 +8,7 @@
       "map": "Travel Map!"
     },
     "footer": {
-      "contactMe": "Or contact me on:"
+      "contactMe": "Or contact me at:"
     },
     "index": {
       "hello": "Hello, I'm",
@@ -21,7 +21,12 @@
     },
     "contact": {
       "contactMe": "Contact Me",
-      "contactText": "If you'd like to get in touch, feel free to email me or connect via LinkedIn or GitHub."
+      "contactText": "If you'd like to get in touch, feel free to fill in the form below or reach out directly via LinkedIn or GitHub.",
+      "formName": "Your name",
+      "formEmail": "Your email",
+      "formSubject": "Subject (optional)",
+      "formMessage": "Message",
+      "formSend": "Send message"
     },
     "404": {
       "oops": "Oops! The page you are looking for does not exist.",
@@ -43,13 +48,16 @@
       "project5Title": "DigReport",
       "project5Desc": "A web application designed to help authorities and archaeologists protect historical heritage in collaboration with metal detectorists. This app will allow everyone to register their finds with a large amount of relevant data.",
       "project6Title": "AIC Members",
+      "project6Desc": "Web application for managing member registrations, cancellations, and information of the cultural association in my hometown, developed with Spring Boot and Vue.js in TypeScript.",
       "project7Title": "AVC Admin",
-      "project7Desc": "Admin dashboard for my hometown neighborhood association to manage members and automatize proccesses, built using only Node.js and vanilla JavaScript.",
-      "project6Desc": "Web application for managing member registrations, cancellations, and information of the cultural association in my hometown, developed with Spring Boot and Vue.js in TypeScript."
+      "project7Desc": "Admin dashboard for my hometown neighborhood association to manage members and automatize processes, built using only Node.js and vanilla JavaScript."
     },
     "about": {
+      "professionalStack": "Professional Stack",
+      "projectsAcademic": "Projects & Academic",
+      "toolsMethods": "Tools & Methods",
       "cvTitle": "Curriculum Vitae",
-      "intro": "I am Marcos Varela, a software engineer passionate about building clean, scalable solutions using Java Spring Boot and .NET. I also enjoy frontend technologies like React and Vue and I'm working hard on improving my skills to become a Full Stack.\nHere is a brief overview of my professional profile.",
+      "intro": "I am Marcos Varela, a software engineer passionate about building clean, scalable solutions using Java Spring Boot and C# .NET. I also enjoy frontend technologies like React and Vue.\nHere is a brief overview of my professional profile.",
       "technicalSkills": "Technical Skills",
       "professionalExperience": "Professional Experience",
       "backend": "Backend",
@@ -57,15 +65,17 @@
       "otherTools": "Other Tools",
       "restApis": "RESTful APIs",
       "frontendStack": "HTML, CSS, JavaScript",
-      "databases": "PostgreSQL & MySQL",
-      "cicd": "CI/CD: Azure, Redmine, Jenkins, SonarQube",
+      "databases": "PostgreSQL & SQL Server",
+      "cicd": "CI/CD: Azure DevOps, Redmine, Jenkins, SonarQube",
       "container": "Containerization: Docker",
       "automation": "Automation: Maven",
       "versioning": "Git, Agile methodologies - Kanban, Scrum",
+      "education": "Education",
       "degree": "Bachelor's Degree in Computer Science - Software Engineering",
       "university": "University of A Coruña",
       "softSkills": "Soft Skills",
       "teamwork": "Teamwork & collaboration",
+      "clientContact": "Direct client contact for requirement gathering and troubleshooting",
       "problemSolving": "Problem-solving mindset",
       "timeManagement": "Effective time management",
       "communication": "Strong communication skills",
@@ -88,7 +98,7 @@
       "interest3": "Graphic design for social media and podcasts",
       "requestCV": "Request full CV",
       "notWorking": "Not working? Contact me at:",
-      "aldabaExperience": "Contributed to industrial management software for clients in energy, metallurgy, and transportation sectors. Automated repetitive tasks and improved desktop-web synchronization. Developed production-ready features enhancing business workflows. Created reports using Crystal Reports and managed databases with SQL Server. Built backend components with .NET and Entity Framework."
+      "aldabaExperience": "Contributed to industrial management software for clients in energy, metallurgy, and transportation sectors. Developed desktop interfaces with Windows Forms and web interfaces with React. Automated repetitive tasks and improved desktop-web synchronization. Developed production-ready features enhancing business workflows. Created reports using Crystal Reports and managed databases with SQL Server. Built backend components with .NET and Entity Framework."
     }
   },
   "es": {
@@ -113,7 +123,12 @@
     },
     "contact": {
       "contactMe": "Contáctame",
-      "contactText": "Si quieres ponerte en contacto, no dudes en enviarme un email o conectarte vía LinkedIn o GitHub."
+      "contactText": "Si quieres ponerte en contacto, rellena el formulario o conéctate directamente vía LinkedIn o GitHub.",
+      "formName": "Tu nombre",
+      "formEmail": "Tu email",
+      "formSubject": "Asunto (opcional)",
+      "formMessage": "Mensaje",
+      "formSend": "Enviar mensaje"
     },
     "404": {
       "oops": "¡Vaya! La página que buscas no existe.",
@@ -135,13 +150,16 @@
       "project5Title": "DigReport",
       "project5Desc": "Aplicación web diseñada para ayudar a las autoridades y arqueólogos a proteger el patrimonio histórico en colaboración con detectores de metales. Esta app permitirá registrar hallazgos con una gran cantidad de datos relevantes.",
       "project6Title": "AIC Members",
+      "project6Desc": "Aplicación web de gestión de altas, bajas e información de los socios de la asociación cultural de mi pueblo, desarrollada con Spring Boot y Vue.js in TypeScript.",
       "project7Title": "AVC Admin",
-      "project7Desc": "Panel de administración para la asociación de vecinos de mi pueblo natal para gestionar socios y automatizar procesos, construido usando solo Node.js y JavaScript puro.",
-      "project6Desc": "Aplicación web de gestión de altas, bajas e información de los socios de la asociación cultural de mi pueblo, desarrollada con Spring Boot y Vue.js in TypeScript."
+      "project7Desc": "Panel de administración para la asociación de vecinos de mi pueblo natal para gestionar socios y automatizar procesos, construido usando solo Node.js y JavaScript puro."
     },
     "about": {
+      "professionalStack": "Stack profesional",
+      "projectsAcademic": "Proyectos académicos",
+      "toolsMethods": "Herramientas y métodos",
       "cvTitle": "Currículum Vitae",
-      "intro": "Soy Marcos Varela, un ingeniero en desarrollo de software apasionado por construir soluciones limpias y escalables con Java Spring Boot y .NET. También disfruto de las tecnologías frontend como React y Vue, y estoy trabajando duro para mejorar mis habilidades y convertirme en Full Stack.\nAquí tienes un breve resumen de mi perfil profesional.",
+      "intro": "Soy Marcos Varela, un ingeniero en desarrollo de software apasionado por construir soluciones limpias y escalables con Java Spring Boot y C# .NET. También disfruto de las tecnologías frontend como React y Vue.\nAquí tienes un breve resumen de mi perfil profesional.",
       "technicalSkills": "Habilidades Técnicas",
       "backend": "Backend",
       "professionalExperience": "Experiencia Profesional",
@@ -151,13 +169,15 @@
       "automation": "Automatización: Maven",
       "restApis": "APIs RESTful",
       "frontendStack": "HTML, CSS, JavaScript",
-      "databases": "PostgreSQL y MySQL",
-      "cicd": "CI/CD: Azure, Redmine, Jenkins, SonarQube",
+      "databases": "PostgreSQL y SQL Server",
+      "cicd": "CI/CD: Azure DevOps, Redmine, Jenkins, SonarQube",
       "versioning": "Git, metodologías ágiles - Kanban, Scrum",
+      "education": "Educación",
       "degree": "Grado en Ingeniería Informática - Ingeniería del Software",
       "university": "Universidad de A Coruña",
       "softSkills": "Habilidades Blandas",
       "teamwork": "Trabajo en equipo y colaboración",
+      "clientContact": "Contacto directo con clientes para recopilación de requisitos y resolución de problemas",
       "problemSolving": "Mentalidad de resolución de problemas",
       "timeManagement": "Gestión eficaz del tiempo",
       "communication": "Habilidades de comunicación",
@@ -180,7 +200,7 @@
       "interest3": "Diseño gráfico para redes sociales y podcasts",
       "requestCV": "Solicitar CV completo",
       "notWorking": "¿No funciona? Contáctame en:",
-      "aldabaExperience": "Desarrollé software de gestión industrial para clientes de energía, metalurgia y transporte. Automaticé flujos de trabajo, mejoré la sincronización del sistema y entregué funcionalidades listas para producción. Creé informes empresariales con Crystal Reports y desarrollé soluciones backend utilizando .NET y Entity Framework."
+      "aldabaExperience": "Desarrollé software de gestión industrial para clientes de energía, metalurgia y transporte. Desarrollé interfaces de escritorio con Windows Forms e interfaces web con React. Automaticé flujos de trabajo, mejoré la sincronización del sistema y entregué funcionalidades listas para producción. Creé informes empresariales con Crystal Reports y desarrollé soluciones backend utilizando .NET y Entity Framework."
     }
   },
   "de": {
@@ -205,7 +225,12 @@
     },
     "contact": {
       "contactMe": "Kontaktiere mich",
-      "contactText": "Wenn du mit mir in Kontakt treten möchtest, kannst du mir gerne eine E-Mail schicken oder dich über LinkedIn oder GitHub verbinden."
+      "contactText": "Wenn du mit mir in Kontakt treten möchtest, füll das Formular aus oder verbinde dich direkt über LinkedIn oder GitHub.",
+      "formName": "Dein Name",
+      "formEmail": "Deine E-Mail",
+      "formSubject": "Betreff (optional)",
+      "formMessage": "Nachricht",
+      "formSend": "Nachricht senden"
     },
     "404": {
       "oops": "Ups! Die gesuchte Seite existiert nicht.",
@@ -227,13 +252,16 @@
       "project5Title": "DigReport",
       "project5Desc": "Eine Webanwendung, die Behörden und Archäologen bei der Erhaltung des historischen Erbes in Zusammenarbeit mit Sondengängern unterstützt. Diese App wird eine Plattform enthalten, auf der alle ihre Funde mit vielen relevanten Daten registrieren können.",
       "project6Title": "AIC-Mitglieder",
+      "project6Desc": "Webanwendung zur Verwaltung von Anmeldungen, Abmeldungen und Informationen der Mitglieder des Kulturvereins in meinem Heimatort, entwickelt mit Spring Boot und Vue.js in TypeScript.",
       "project7Title": "AVC Admin",
-      "project7Desc": "Admin-Dashboard für die Nachbarschaftsvereinigung meiner Heimatstadt zur Verwaltung von Mitgliedern und Automatisierung von Prozessen, gebaut nur mit Node.js und reinem JavaScript.",
-      "project6Desc": "Webanwendung zur Verwaltung von Anmeldungen, Abmeldungen und Informationen der Mitglieder des Kulturvereins in meinem Heimatort, entwickelt mit Spring Boot und Vue.js in TypeScript."
+      "project7Desc": "Admin-Dashboard für die Nachbarschaftsvereinigung meiner Heimatstadt zur Verwaltung von Mitgliedern und Automatisierung von Prozessen, gebaut nur mit Node.js und reinem JavaScript."
     },
     "about": {
+      "professionalStack": "Professioneller Stack",
+      "projectsAcademic": "Projekte & Akademisches",
+      "toolsMethods": "Tools und Methoden",
       "cvTitle": "Lebenslauf",
-      "intro": "Ich bin Marcos Varela, ein Ingenieur für Softwareentwicklung, der leidenschaftlich saubere, skalierbare Lösungen mit Java Spring Boot und .NET erstellt. Ich arbeite auch gerne mit Frontend-Technologien wie React und Vue und arbeite hart daran, meine Fähigkeiten zu verbessern, um Full Stack zu werden.\nHier ein kurzer Überblick über mein berufliches Profil.",
+      "intro": "Ich bin Marcos Varela, ein Ingenieur für Softwareentwicklung, der leidenschaftlich saubere, skalierbare Lösungen mit Java Spring Boot und C# .NET erstellt. Ich arbeite auch gerne mit Frontend-Technologien wie React und Vue.\nHier ein kurzer Überblick über mein berufliches Profil.",
       "technicalSkills": "Technische Fähigkeiten",
       "backend": "Backend",
       "frontend": "Frontend",
@@ -243,13 +271,15 @@
       "automation": "Automatisierung: Maven",
       "restApis": "RESTful-APIs",
       "frontendStack": "HTML, CSS, JavaScript",
-      "databases": "PostgreSQL & MySQL",
-      "cicd": "CI/CD: Azure, Redmine, Jenkins, SonarQube",
+      "databases": "PostgreSQL & SQL Server",
+      "cicd": "CI/CD: Azure DevOps, Redmine, Jenkins, SonarQube",
       "versioning": "Git, agile Methoden - Kanban, Scrum",
+      "education": "Bildung",
       "degree": "Ingenieurinformatik - Software Engineering",
       "university": "Universität A Coruña",
       "softSkills": "Soft Skills",
       "teamwork": "Teamarbeit und Zusammenarbeit",
+      "clientContact": "Direkter Kundenkontakt für Anforderungserfassung und Problembehebung",
       "problemSolving": "Problemlösungsmentalität",
       "timeManagement": "Effektives Zeitmanagement",
       "communication": "Starke Kommunikationsfähigkeiten",
@@ -272,7 +302,7 @@
       "interest3": "Grafikdesign für soziale Medien und Podcasts",
       "requestCV": "Vollständigen Lebenslauf anfordern",
       "notWorking": "Funktioniert nicht? Kontaktiere mich unter:",
-      "aldabaExperience": "Beitrag zur industriellen Managementsoftware für Kunden aus den Bereichen Energie, Metallurgie und Transport. Automatisierte wiederkehrende Aufgaben und verbesserte die Desktop-Web-Synchronisierung. Entwickelte produktionsreife Funktionen zur Verbesserung der Geschäftsabläufe. Erstellte Berichte mit Crystal Reports und verwaltete Datenbanken mit SQL Server. Entwickelte Backend-Komponenten mit .NET und Entity Framework."
+      "aldabaExperience": "Beitrag zur industriellen Managementsoftware für Kunden aus den Bereichen Energie, Metallurgie und Transport. Entwickelte Desktop-Oberflächen mit Windows Forms und Web-Oberflächen mit React. Automatisierte wiederkehrende Aufgaben und verbesserte die Desktop-Web-Synchronisierung. Entwickelte produktionsreife Funktionen zur Verbesserung der Geschäftsabläufe. Erstellte Berichte mit Crystal Reports und verwaltete Datenbanken mit SQL Server. Entwickelte Backend-Komponenten mit .NET und Entity Framework."
     }
   }
 }

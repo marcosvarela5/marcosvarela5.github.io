@@ -7,61 +7,98 @@
   <title>Contact | Marcos Varela</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <script defer src="assets/js/about.js"></script>
 </head>
 
 <body>
-
-  <header>
-    <nav>
-      <button class="menu-toggle" aria-label="Open menu">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul id="main-menu" class="menu">
-        <li><a href="index.html"><span data-i18n="menu.home"></span></a></li>
-        <li><a href="about.html"><span data-i18n="menu.cv"></span></a></li>
-        <li><a href="portfolio.html"><span data-i18n="menu.portfolio"></span></a></li>
-        <li><a href="contact.html" class="active"><span data-i18n="menu.contact"></span></a></li>
-        <li><a href="map.html"><span data-i18n="menu.map"></span></a></li>
-      </ul>
-
-      <div class="lang-selector">
-        <button data-set-lang="en" aria-label="English">
-          <img src="assets/img/flags/gb.png" alt="English" class="flag-icon">
-        </button>
-        <button data-set-lang="es" aria-label="Español">
-          <img src="assets/img/flags/es.png" alt="Español" class="flag-icon">
-        </button>
-        <button data-set-lang="de" aria-label="Deutsch">
-          <img src="assets/img/flags/de.png" alt="Deutsch" class="flag-icon">
-        </button>
-      </div>
-    </nav>
-  </header>
+  <header></header>
 
   <main>
     <section class="section-contact">
       <h2><span data-i18n="contact.contactMe"></span></h2>
       <p><span data-i18n="contact.contactText"></span></p>
+
+      <!-- Contact form (frontend only — opens mail client via mailto fallback) -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="contact-name" data-i18n="contact.formName"></label>
+          <input type="text" id="contact-name" name="name" required autocomplete="name"
+            placeholder="Marcos Varela">
+        </div>
+        <div class="form-group">
+          <label for="contact-email" data-i18n="contact.formEmail"></label>
+          <input type="email" id="contact-email" name="email" required autocomplete="email"
+            placeholder="marcos@example.com">
+        </div>
+        <div class="form-group">
+          <label for="contact-subject" data-i18n="contact.formSubject"></label>
+          <input type="text" id="contact-subject" name="subject"
+            placeholder="CV Request / Collaboration / ...">
+        </div>
+        <div class="form-group">
+          <label for="contact-message" data-i18n="contact.formMessage"></label>
+          <textarea id="contact-message" name="message" required
+            placeholder="Hi Marcos, I'd like to..."></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            <span data-i18n="contact.formSend"></span>
+          </button>
+        </div>
+        <div class="form-feedback" id="formFeedback"></div>
+      </form>
+
+      <!-- Direct contact links -->
+      <div class="contact-links">
+        <a href="mailto:marcosf.varelam@gmail.com" class="contact-link-item">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://linkedin.com/in/marcosvarela5" target="_blank" rel="noopener" class="contact-link-item">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/marcosvarela5" target="_blank" rel="noopener" class="contact-link-item">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Marcos Varela</p>
-    <div class="footer-icons">
-      <a href="https://github.com/marcosvarela5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/marcosvarela5" target="_blank" aria-label="LinkedIn"><i
-          class="fab fa-linkedin"></i></a>
-      <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a><br>
-    </div>
-    <p><span data-i18n="footer.contactMe"></span> marcosf.varelam@gmail.com</p>
-  </footer>
+  <footer></footer>
 
+  <script src="assets/js/components.js"></script>
   <script src="assets/js/menumobile.js"></script>
   <script src="assets/js/lang.js"></script>
   <script src="assets/js/theme.js"></script>
+  <script>
+    // Opens the default mail client with pre-filled data as a no-backend fallback.
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name    = document.getElementById('contact-name').value.trim();
+      const email   = document.getElementById('contact-email').value.trim();
+      const subject = document.getElementById('contact-subject').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+      const feedback = document.getElementById('formFeedback');
 
+      if (!name || !email || !message) {
+        feedback.className = 'form-feedback error';
+        feedback.textContent = 'Please fill in name, email, and message.';
+        return;
+      }
 
+      const body = `From: ${name} (${email})\n\n${message}`;
+      window.location.href =
+        `mailto:marcosf.varelam@gmail.com` +
+        `?subject=${encodeURIComponent(subject || 'Contact from portfolio')}` +
+        `&body=${encodeURIComponent(body)}`;
+
+      feedback.className = 'form-feedback success';
+      feedback.textContent = 'Opening your mail client...';
+      this.reset();
+    });
+  </script>
 </body>
 
 </html>

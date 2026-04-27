@@ -11,42 +11,9 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <button class="menu-toggle" aria-label="Open menu">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul id="main-menu" class="menu">
-        <li><a href="index.html" class="active" data-i18n="menu.home"></a></li>
-        <li><a href="about.html" data-i18n="menu.cv"></a></li>
-        <li><a href="portfolio.html" data-i18n="menu.portfolio"></a></li>
-        <li><a href="contact.html" data-i18n="menu.contact"></a></li>
-        <li><a href="map.html" data-i18n="menu.map"></a></li>
-      </ul>
-      <div class="lang-selector">
-        <button data-set-lang="en" aria-label="English">
-          <img src="assets/img/flags/gb.png" alt="English" class="flag-icon">
-        </button>
-        <button data-set-lang="es" aria-label="Español">
-          <img src="assets/img/flags/es.png" alt="Español" class="flag-icon">
-        </button>
-        <button data-set-lang="de" aria-label="Deutsch">
-          <img src="assets/img/flags/de.png" alt="Deutsch" class="flag-icon">
-        </button>
-      </div>
-
-      <div class="theme-toggle">
-        <button id="themeButton" aria-label="Toggle dark mode">
-          <i class="fas fa-moon"></i>
-        </button>
-      </div>
-
-
-    </nav>
-  </header>
+  <header></header>
 
   <main>
-
     <section id="home" class="section-home">
       <div class="home-content">
         <div class="home-text">
@@ -59,7 +26,6 @@
       </div>
     </section>
 
-
     <section id="about-me" class="section-about">
       <h2 data-i18n="index.aboutTitle"></h2>
       <div class="about-text">
@@ -71,31 +37,14 @@
         <img src="assets/img/happy.png" alt="Imagen de Happy" />
       </div>
     </section>
-
   </main>
 
+  <footer></footer>
 
-  <footer>
-    <p>&copy; 2025 Marcos Varela</p>
-    <div class="footer-icons">
-      <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://github.com/marcosvarela5" target="_blank" rel="noopener" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/marcosvarela5" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-    <p><span data-i18n="footer.contactMe"></span> marcosf.varelam@gmail.com</p>
-  </footer>
-
+  <script src="assets/js/components.js"></script>
   <script src="assets/js/menumobile.js"></script>
   <script src="assets/js/lang.js"></script>
   <script src="assets/js/theme.js"></script>
-
-
 </body>
 
 </html>

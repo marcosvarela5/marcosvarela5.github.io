@@ -7,36 +7,10 @@
   <title>CV | Marcos Varela</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <script defer src="assets/js/about.js"></script>
 </head>
 
 <body>
-
-  <header>
-    <nav>
-      <button class="menu-toggle" aria-label="Open menu">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul id="main-menu" class="menu">
-        <li><a href="index.html" data-i18n="menu.home"></a></li>
-        <li><a href="about.html" class="active" data-i18n="menu.cv"></a></li>
-        <li><a href="portfolio.html" data-i18n="menu.portfolio"></a></li>
-        <li><a href="contact.html" data-i18n="menu.contact"></a></li>
-        <li><a href="map.html" data-i18n="menu.map"></a></li>
-      </ul>
-      <div class="lang-selector">
-        <button data-set-lang="en" aria-label="English">
-          <img src="assets/img/flags/gb.png" alt="English" class="flag-icon">
-        </button>
-        <button data-set-lang="es" aria-label="Español">
-          <img src="assets/img/flags/es.png" alt="Español" class="flag-icon">
-        </button>
-        <button data-set-lang="de" aria-label="Deutsch">
-          <img src="assets/img/flags/de.png" alt="Deutsch" class="flag-icon">
-        </button>
-      </div>
-    </nav>
-  </header>
+  <header></header>
 
   <main>
     <section class="section-cv">
@@ -44,68 +18,81 @@
 
       <div class="cv-profile" style="text-align:center; margin-bottom:2rem;">
         <img src="assets/img/profilepic.png" alt="Profile Photo"
-          style="width:120px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:1rem;">
-        <p data-i18n="about.intro" style="font-size:1.1rem; max-width:600px; margin:0 auto;"></p>
+          style="width:120px; border-radius:50%; box-shadow:0 4px 12px var(--shadow-soft); margin-bottom:1rem;">
+        <p data-i18n="about.intro" style="font-size:1.1rem; max-width:600px; margin:0 auto; color:var(--muted);"></p>
       </div>
 
       <div class="grid-container">
+
         <!-- Technical Skills -->
         <div class="card fade-in">
           <h3><i class="fas fa-code"></i> <span data-i18n="about.technicalSkills"></span></h3>
           <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+
+            <div style="flex:1 1 100%; border-left:3px solid var(--accent); padding-left:1rem; margin-bottom:0.5rem;">
+              <h4 style="margin-bottom:0.5rem; color:var(--text);">
+                <i class="fas fa-industry" style="color:var(--text);"></i>
+                <span data-i18n="about.professionalStack"></span>
+              </h4>
+              <ul>
+                <li><span class="badge">C#</span> .NET &amp; Entity Framework</li>
+                <li><span class="badge">Windows Forms</span> (DevExpress, Infragistics)</li>
+                <li><span class="badge">React</span> (Redux)</li>
+                <li><span class="badge">Oracle</span> &amp; <span class="badge">SQL Server</span></li>
+              </ul>
+            </div>
+
             <div style="flex:1 1 45%;">
-              <h4 data-i18n="about.backend"></h4>
+              <h4 style="margin-bottom:0.5rem; color:var(--text);">
+                <i class="fas fa-flask"></i>
+                <span data-i18n="about.projectsAcademic"></span>
+              </h4>
               <ul>
                 <li><span class="badge">Java</span> Spring Boot</li>
-                <li><span class="badge">C#</span> .NET</li>
+                <li><span class="badge">Vue.js</span> (Vite, Axios, Pinia)</li>
+                <li><span class="badge">TypeScript</span></li>
                 <li><span class="badge">Node.js</span></li>
-                <li data-i18n="about.restApis"></li>
-                <li><span class="badge"><strong>Testing:</strong></span> JUnit & Mockito</li>
+                <li><span class="badge">Testing:</span> JUnit &amp; Mockito</li>
               </ul>
             </div>
+
             <div style="flex:1 1 45%;">
-              <h4 data-i18n="about.frontend"></h4>
+              <h4 style="margin-bottom:0.5rem; color:var(--text);">
+                <i class="fas fa-cogs"></i>
+                <span data-i18n="about.toolsMethods"></span>
+              </h4>
               <ul>
                 <li data-i18n="about.frontendStack"></li>
-                <li><span class="badge">React (Redux)</span> & Vue.js (Vite, Axios, Pinia)</li>
-                <li><span class="badge">TypeScript</span></li>
-                <li><span class="badge">Windows Forms</span></li>
-              </ul>
-            </div>
-            <div style="flex:1 1 100%;">
-              <h4 data-i18n="about.otherTools"></h4>
-              <ul>
-                <li data-i18n="about.databases"></li>
+                <li data-i18n="about.restApis"></li>
                 <li data-i18n="about.container"></li>
                 <li data-i18n="about.cicd"></li>
                 <li data-i18n="about.versioning"></li>
                 <li data-i18n="about.automation"></li>
-
-
               </ul>
             </div>
+
           </div>
         </div>
 
         <!-- Professional Experience -->
-<div class="card fade-in delay-1">
-  <h3><i class="fas fa-briefcase"></i> <span data-i18n="about.professionalExperience"></span></h3>
-  <p><strong>Junior Software Consultant</strong><br>
-     <span style="color: #c41e3a;">ALDABA Servicios Profesionales S.L.</span><br> A Coruña, Spain<br>
-    <em>Sept. 2025 – present</em>
-  </p>
-  <ul style="margin-top: 0.5rem;">
-    <p data-i18n="about.aldabaExperience"></p>
-</div>
+        <div class="card fade-in delay-1">
+          <h3><i class="fas fa-briefcase"></i> <span data-i18n="about.professionalExperience"></span></h3>
+          <p><strong>Junior Software Consultant</strong><br>
+           <span style="color: #c41e3a;">ALDABA Servicios Profesionales S.L.</span><br>
+            A Coruña, Spain<br>
+            <em>Sept. 2025 – present</em>
+          </p>
+          <p data-i18n="about.aldabaExperience" style="margin-top:0.5rem;"></p>
+        </div>
 
         <!-- Education -->
         <div class="card fade-in delay-1">
           <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="about.education"></span></h3>
           <p><strong data-i18n="about.degree"></strong><br><span data-i18n="about.university"></span></p>
-          <img src="assets/img/udc.png" alt="University of A Coruña logo" style="margin-top:1rem;">
+          <img src="assets/img/udc.png" alt="University of A Coruña logo">
         </div>
 
-                <!-- Languages -->
+        <!-- Languages -->
         <div class="card fade-in delay-4">
           <h3><i class="fas fa-language"></i> <span data-i18n="about.languages"></span></h3>
           <div class="language-item">
@@ -136,13 +123,13 @@
           <h3><i class="fas fa-users"></i> <span data-i18n="about.softSkills"></span></h3>
           <ul>
             <li data-i18n="about.teamwork"></li>
+            <li data-i18n="about.clientContact"></li>
             <li data-i18n="about.timeManagement"></li>
             <li data-i18n="about.communication"></li>
             <li data-i18n="about.publicSpeaking"></li>
             <li data-i18n="about.stressManagement"></li>
           </ul>
         </div>
-
 
         <!-- Certifications -->
         <div class="card fade-in delay-3">
@@ -153,11 +140,21 @@
             </li>
             <li><strong>Clean Code</strong>
               <p>Vitae Consultores<br>
-              <em>Oct. 2025</em><br>
-              <span style="font-size:0.9rem; color:#666;">ID: I6TT6IQR8UAA3342</span><br>
-              <a href="https://www.vitaedigital.com/certificado/rs2y6xs4fi9692ui" target="_blank" style="font-size:0.9rem; margin-top:0.3rem; display:inline-block;">
-                <i class="fas fa-external-link-alt"></i> See certificate
-              </a></p>
+                <em>Oct. 2025</em><br>
+                <span style="font-size:0.9rem; color:var(--muted);">ID: I6TT6IQR8UAA3342</span><br>
+                <a href="https://www.vitaedigital.com/certificado/rs2y6xs4fi9692ui" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> See certificate
+                </a>
+              </p>
+            </li>
+            <li><strong>Advanced Clean Code</strong>
+              <p>Vitae Consultores<br>
+                <em>Apr. 2026</em><br>
+                <span style="font-size:0.9rem; color:var(--muted);">ID: O6STXZ8X1ZLITFXV</span><br>
+                <a href="https://www.vitaedigital.com/certificado/q50z862d30t7cqc0" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> See certificate
+                </a>
+              </p>
             </li>
           </ul>
         </div>
@@ -171,32 +168,24 @@
             <li data-i18n="about.interest3"></li>
           </ul>
         </div>
+
       </div>
 
       <div style="text-align:center; margin-top:2rem;">
         <a href="mailto:marcosf.varelam@gmail.com?Subject=CV%20Request" class="btn-primary"
           data-i18n="about.requestCV"></a>
-      </div><br>
-      <p><span data-i18n="about.notWorking"></span> marcosf.varelam@gmail.com</p>
+      </div>
+      <br>
+      <p style="color:var(--muted);"><span data-i18n="about.notWorking"></span> marcosf.varelam@gmail.com</p>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Marcos Varela</p>
-    <div class="footer-icons">
-      <a href="https://github.com/marcosvarela5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/marcosvarela5" target="_blank" aria-label="LinkedIn"><i
-          class="fab fa-linkedin"></i></a>
-      <a href="mailto:marcosf.varelam@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-    </div>
-    <p><span data-i18n="footer.contactMe"></span> marcosf.varelam@gmail.com</p>
-  </footer>
+  <footer></footer>
 
+  <script src="assets/js/components.js"></script>
   <script src="assets/js/menumobile.js"></script>
   <script src="assets/js/lang.js"></script>
   <script src="assets/js/theme.js"></script>
-
-
 </body>
 
 </html>
