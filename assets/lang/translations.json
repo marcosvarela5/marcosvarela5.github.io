@@ -54,7 +54,22 @@
       "project6Title": "AIC Members",
       "project6Desc": "Web application for managing member registrations, cancellations, and information of the cultural association in my hometown, developed with Spring Boot and Vue.js in TypeScript.",
       "project7Title": "AVC Admin",
-      "project7Desc": "Admin dashboard for my hometown neighborhood association to manage members and automatize processes, built using only Node.js and vanilla JavaScript."
+      "project7Desc": "Admin dashboard for my hometown neighborhood association to manage members and automatize processes, built using only Node.js and vanilla JavaScript.",
+      "badges": {
+        "v1": "v1.0",
+        "beta": "Beta",
+        "indev": "In development",
+        "deprecated": "Deprecated",
+        "betaOpen": "Open Beta",
+        "betaClosed": "Closed Beta"
+      },
+      "project1Stack": "HTML · CSS · JS",
+      "project2Stack": "Spring · React",
+      "project3Stack": "C# · .NET · Entity Framework",
+      "project4Stack": "Java",
+      "project5Stack": "Spring Boot · Vue 3 · TypeScript",
+      "project6Stack": "Spring Boot · Vue.js · TypeScript",
+      "project7Stack": "Node.js · JavaScript"
     },
     "about": {
       "professionalStack": "Professional Stack",
@@ -102,7 +117,12 @@
       "interest3": "Graphic design for social media and podcasts",
       "requestCV": "Request full CV",
       "notWorking": "Not working? Contact me at:",
-      "aldabaExperience": "Contributed to industrial management software for clients in energy, metallurgy, and transportation sectors. Developed desktop interfaces with Windows Forms and web interfaces with React. Automated repetitive tasks and improved desktop-web synchronization. Developed production-ready features enhancing business workflows. Created reports using Crystal Reports and managed databases with SQL Server. Built backend components with .NET and Entity Framework."
+      "aldabaExperience": "Contributed to industrial management software for clients in energy, metallurgy, and transportation sectors. Developed desktop interfaces with Windows Forms and web interfaces with React. Automated repetitive tasks and improved desktop-web synchronization. Developed production-ready features enhancing business workflows. Created reports using Crystal Reports and managed databases with SQL Server. Built backend components with .NET and Entity Framework.",
+      "graduated": "Graduated May 2025",
+      "tfg": "Final degree project — 9.3 / 10",
+      "downloadTFG": "Download thesis (PDF)",
+      "tfgLabel": "Final Degree Project",
+      "tfgDesc": "Archaeological heritage platform with AI-powered artifact analysis, role-based access and interactive maps. Spring Boot · Vue 3 · TypeScript · Gemini AI."
     }
   },
   "es": {
@@ -160,7 +180,22 @@
       "project6Title": "AIC Members",
       "project6Desc": "Aplicación web de gestión de altas, bajas e información de los socios de la asociación cultural de mi pueblo, desarrollada con Spring Boot y Vue.js in TypeScript.",
       "project7Title": "AVC Admin",
-      "project7Desc": "Panel de administración para la asociación de vecinos de mi pueblo natal para gestionar socios y automatizar procesos, construido usando solo Node.js y JavaScript puro."
+      "project7Desc": "Panel de administración para la asociación de vecinos de mi pueblo natal para gestionar socios y automatizar procesos, construido usando solo Node.js y JavaScript puro.",
+      "badges": {
+        "v1": "v1.0",
+        "beta": "Beta",
+        "indev": "En desarrollo",
+        "deprecated": "Obsoleto",
+        "betaOpen": "Beta abierta",
+        "betaClosed": "Beta cerrada"
+      },
+      "project1Stack": "HTML · CSS · JS",
+      "project2Stack": "Spring · React",
+      "project3Stack": "C# · .NET · Entity Framework",
+      "project4Stack": "Java",
+      "project5Stack": "Spring Boot · Vue 3 · TypeScript",
+      "project6Stack": "Spring Boot · Vue.js · TypeScript",
+      "project7Stack": "Node.js · JavaScript"
     },
     "about": {
       "professionalStack": "Stack profesional",
@@ -208,7 +243,12 @@
       "interest3": "Diseño gráfico para redes sociales y podcasts",
       "requestCV": "Solicitar CV completo",
       "notWorking": "¿No funciona? Contáctame en:",
-      "aldabaExperience": "Desarrollé software de gestión industrial para clientes de energía, metalurgia y transporte. Desarrollé interfaces de escritorio con Windows Forms e interfaces web con React. Automaticé flujos de trabajo, mejoré la sincronización del sistema y entregué funcionalidades listas para producción. Creé informes empresariales con Crystal Reports y desarrollé soluciones backend utilizando .NET y Entity Framework."
+      "aldabaExperience": "Desarrollé software de gestión industrial para clientes de energía, metalurgia y transporte. Desarrollé interfaces de escritorio con Windows Forms e interfaces web con React. Automaticé flujos de trabajo, mejoré la sincronización del sistema y entregué funcionalidades listas para producción. Creé informes empresariales con Crystal Reports y desarrollé soluciones backend utilizando .NET y Entity Framework.",
+      "graduated": "Graduado mayo 2025",
+      "tfg": "Trabajo de Fin de Grado — 9,3 / 10",
+      "downloadTFG": "Descargar memoria (PDF)",
+      "tfgLabel": "Trabajo de Fin de Grado",
+      "tfgDesc": "Plataforma de patrimonio arqueológico con análisis de artefactos por IA, acceso por roles y mapas interactivos. Spring Boot · Vue 3 · TypeScript · Gemini AI."
     }
   },
   "de": {
@@ -266,7 +306,22 @@
       "project6Title": "AIC-Mitglieder",
       "project6Desc": "Webanwendung zur Verwaltung von Anmeldungen, Abmeldungen und Informationen der Mitglieder des Kulturvereins in meinem Heimatort, entwickelt mit Spring Boot und Vue.js in TypeScript.",
       "project7Title": "AVC Admin",
-      "project7Desc": "Admin-Dashboard für die Nachbarschaftsvereinigung meiner Heimatstadt zur Verwaltung von Mitgliedern und Automatisierung von Prozessen, gebaut nur mit Node.js und reinem JavaScript."
+      "project7Desc": "Admin-Dashboard für die Nachbarschaftsvereinigung meiner Heimatstadt zur Verwaltung von Mitgliedern und Automatisierung von Prozessen, gebaut nur mit Node.js und reinem JavaScript.",
+      "badges": {
+        "v1": "v1.0",
+        "beta": "Beta",
+        "indev": "In Entwicklung",
+        "deprecated": "Veraltet",
+        "betaOpen": "Offene Beta",
+        "betaClosed": "Geschlossene Beta"
+      },
+      "project1Stack": "HTML · CSS · JS",
+      "project2Stack": "Spring · React",
+      "project3Stack": "C# · .NET · Entity Framework",
+      "project4Stack": "Java",
+      "project5Stack": "Spring Boot · Vue 3 · TypeScript",
+      "project6Stack": "Spring Boot · Vue.js · TypeScript",
+      "project7Stack": "Node.js · JavaScript"
     },
     "about": {
       "professionalStack": "Professioneller Stack",
@@ -314,7 +369,12 @@
       "interest3": "Grafikdesign für soziale Medien und Podcasts",
       "requestCV": "Vollständigen Lebenslauf anfordern",
       "notWorking": "Funktioniert nicht? Kontaktiere mich unter:",
-      "aldabaExperience": "Beitrag zur industriellen Managementsoftware für Kunden aus den Bereichen Energie, Metallurgie und Transport. Entwickelte Desktop-Oberflächen mit Windows Forms und Web-Oberflächen mit React. Automatisierte wiederkehrende Aufgaben und verbesserte die Desktop-Web-Synchronisierung. Entwickelte produktionsreife Funktionen zur Verbesserung der Geschäftsabläufe. Erstellte Berichte mit Crystal Reports und verwaltete Datenbanken mit SQL Server. Entwickelte Backend-Komponenten mit .NET und Entity Framework."
+      "aldabaExperience": "Beitrag zur industriellen Managementsoftware für Kunden aus den Bereichen Energie, Metallurgie und Transport. Entwickelte Desktop-Oberflächen mit Windows Forms und Web-Oberflächen mit React. Automatisierte wiederkehrende Aufgaben und verbesserte die Desktop-Web-Synchronisierung. Entwickelte produktionsreife Funktionen zur Verbesserung der Geschäftsabläufe. Erstellte Berichte mit Crystal Reports und verwaltete Datenbanken mit SQL Server. Entwickelte Backend-Komponenten mit .NET und Entity Framework.",
+      "graduated": "Abschluss Mai 2025",
+      "tfg": "Abschlussarbeit — 9,3 / 10",
+      "downloadTFG": "Abschlussarbeit herunterladen (PDF)",
+      "tfgLabel": "Abschlussarbeit",
+      "tfgDesc": "Archäologische Heritage-Plattform mit KI-gestützter Artefaktanalyse, rollenbasiertem Zugriff und interaktiven Karten. Spring Boot · Vue 3 · TypeScript · Gemini AI."
     }
   }
 }
