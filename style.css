@@ -449,10 +449,29 @@ footer p {
   color: var(--text);
 }
 
-.about-photo img {
+.about-photo img,
+.about-photos img {
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 6px 15px var(--shadow-soft);
+}
+
+.about-photos {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-photos img {
+  width: calc(50% - 0.5rem);
+  min-width: 200px;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.about-photos img:last-child {
+  object-position: center 100%;
 }
 
 .section-cv {
@@ -850,4 +869,18 @@ footer p {
   .error-container h1 {
     font-size: 5rem;
   }
+}
+
+/* ─────────────────────────────────────────────
+   TYPEWRITER
+───────────────────────────────────────────── */
+.typewriter-target {
+  visibility: hidden;
+  border-right: 2px solid var(--accent);
+  animation: tw-blink 0.65s step-end infinite;
+  white-space: nowrap;
+}
+
+@keyframes tw-blink {
+  50% { border-color: transparent; }
 }

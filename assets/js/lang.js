@@ -1,9 +1,7 @@
 // assets/js/lang.js
 
-// Idioma por defecto
 const defaultLang = "en";
 
-// Función principal
 async function setLanguage(lang) {
   try {
     const res = await fetch("/assets/lang/translations.json");
@@ -15,7 +13,6 @@ async function setLanguage(lang) {
       return setLanguage(defaultLang);
     }
 
-    // Seleccionar elementos dinámicamente cada vez
     const elements = document.querySelectorAll("[data-i18n]");
 
     elements.forEach(el => {
@@ -32,9 +29,7 @@ async function setLanguage(lang) {
       });
 
       if (text) {
-        // Si contiene \n, dividimos en nodos de texto + <br>
         if (text.includes("\n")) {
-          // Vaciar el elemento
           el.textContent = "";
           const parts = text.split("\n");
           parts.forEach((part, index) => {
@@ -44,34 +39,31 @@ async function setLanguage(lang) {
             }
           });
         } else {
-          // Solo texto simple
           el.textContent = text;
         }
 
-        // Añade animación al cambiar
         el.classList.remove("fade-in");
         void el.offsetWidth;
         el.classList.add("fade-in");
-
       } else {
         console.warn(`Missing translation for key '${key}' in '${lang}'`);
       }
     });
 
-    // Guarda elección
     localStorage.setItem("lang", lang);
+
+    // Notify other scripts (e.g. typewriter) that translations are ready
+    document.dispatchEvent(new CustomEvent("langReady", { detail: { lang } }));
 
   } catch (error) {
     console.error("Error loading translations:", error);
   }
 }
 
-// Inicializa el idioma al cargar
 function initLanguage() {
   const savedLang = localStorage.getItem("lang") || defaultLang;
   setLanguage(savedLang);
 
-  // Añade eventos de cambio
   document.querySelectorAll("[data-set-lang]").forEach(btn => {
     btn.addEventListener("click", () => {
       const newLang = btn.getAttribute("data-set-lang");
@@ -80,5 +72,4 @@ function initLanguage() {
   });
 }
 
-// Lanzar al cargar
 document.addEventListener("DOMContentLoaded", initLanguage);
