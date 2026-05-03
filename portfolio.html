@@ -91,7 +91,18 @@
           </div>
         </a>
 
-        <!-- Sports Trial Management — Deprecated -->
+      </div>
+
+      <!-- Deprecated accordion -->
+      <button class="pf-deprecated-toggle" aria-expanded="false" aria-controls="pf-deprecated-list">
+        <i class="fas fa-archive" style="font-size:0.75rem;"></i>
+        <span data-i18n="portfolio.badges.deprecated"></span> (3)
+        <i class="fas fa-chevron-down pf-toggle-icon"></i>
+      </button>
+
+      <div class="pf-deprecated-list" id="pf-deprecated-list">
+
+        <!-- Sports Trial Management -->
         <a class="pf-row pf-row--deprecated" href="https://github.com/marcosvarela5/practicaPA" target="_blank" rel="noopener">
           <div class="pf-img">
             <img src="assets/img/sports.png" alt="Sports Trials">
@@ -109,7 +120,7 @@
           </div>
         </a>
 
-        <!-- Event Management — Deprecated -->
+        <!-- Event Management -->
         <a class="pf-row pf-row--deprecated" href="https://github.com/marcosvarela5/practicaMad" target="_blank" rel="noopener">
           <div class="pf-img">
             <img src="assets/img/event.jpg" alt="Event Management">
@@ -127,7 +138,7 @@
           </div>
         </a>
 
-        <!-- Simple Web Server — Deprecated -->
+        <!-- Simple Web Server -->
         <a class="pf-row pf-row--deprecated" href="https://github.com/marcosvarela5/webServerPractice" target="_blank" rel="noopener">
           <div class="pf-img">
             <img src="assets/img/server.png" alt="Web Server">
@@ -156,6 +167,17 @@
   <script src="assets/js/menumobile.js"></script>
   <script src="assets/js/lang.js"></script>
   <script src="assets/js/theme.js"></script>
+
+  <script>
+    const toggle = document.querySelector('.pf-deprecated-toggle');
+    const list   = document.getElementById('pf-deprecated-list');
+
+    toggle.addEventListener('click', function () {
+      const open = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !open);
+      list.classList.toggle('is-open', !open);
+    });
+  </script>
 </body>
 
 </html>

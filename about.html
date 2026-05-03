@@ -16,186 +16,226 @@
     <section class="section-cv">
       <h2 data-i18n="about.cvTitle"></h2>
 
-      <div class="cv-profile" style="text-align:center; margin-bottom:2rem;">
-        <img src="assets/img/profilepic.png" alt="Profile Photo"
-          style="width:120px; border-radius:50%; box-shadow:0 4px 12px var(--shadow-soft); margin-bottom:1rem;">
-        <p data-i18n="about.intro" style="font-size:1.1rem; max-width:600px; margin:0 auto; color:var(--muted);"></p>
+      <!-- HERO STRIP -->
+      <div class="cv-hero-strip">
+        <div class="cv-hero-avatar">
+          <img src="assets/img/profilepic.png" alt="Marcos Varela">
+        </div>
+        <div class="cv-hero-info">
+          <div class="cv-hero-name">Marcos Varela</div>
+          <div class="cv-hero-role">Software Engineer &middot; .NET/C# &middot; Industrial systems</div>
+          <div class="cv-hero-bio" data-i18n="about.intro"></div>
+        </div>
+        <div class="cv-hero-actions">
+          <a href="contact.html?subject=CV+Request" class="btn-primary" data-i18n="about.requestCV"></a>
+          <a href="contact.html" class="btn-ghost"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
 
-      <div class="grid-container">
+      <!-- BENTO GRID -->
+      <div class="cv-bento">
 
-        <!-- Technical Skills -->
-        <div class="card fade-in">
-          <h3><i class="fas fa-code"></i> <span data-i18n="about.technicalSkills"></span></h3>
-          <div style="display:flex; flex-wrap:wrap; gap:1rem;">
-
-            <div style="flex:1 1 100%; border-left:3px solid var(--accent); padding-left:1rem; margin-bottom:0.5rem;">
-              <h4 style="margin-bottom:0.5rem; color:var(--text);">
-                <i class="fas fa-industry" style="color:var(--accent);"></i>
-                <span data-i18n="about.professionalStack"></span>
-              </h4>
-              <ul>
-                <li><span class="badge">C#</span> .NET &amp; Entity Framework</li>
-                <li><span class="badge">Windows Forms</span> (DevExpress, Infragistics)</li>
-                <li><span class="badge">React</span> (Redux)</li>
-                <li><span class="badge">Oracle</span> &amp; <span class="badge">SQL Server</span></li>
-              </ul>
-            </div>
-
-            <div style="flex:1 1 45%;">
-              <h4 style="margin-bottom:0.5rem; color:var(--text);">
-                <i class="fas fa-flask"></i>
-                <span data-i18n="about.projectsAcademic"></span>
-              </h4>
-              <ul>
-                <li><span class="badge">Java</span> Spring Boot</li>
-                <li><span class="badge">Vue.js</span> (Vite, Axios, Pinia)</li>
-                <li><span class="badge">TypeScript</span></li>
-                <li><span class="badge">Node.js</span></li>
-                <li><span class="badge">Testing:</span> JUnit &amp; Mockito</li>
-              </ul>
-            </div>
-
-            <div style="flex:1 1 45%;">
-              <h4 style="margin-bottom:0.5rem; color:var(--text);">
-                <i class="fas fa-cogs"></i>
-                <span data-i18n="about.toolsMethods"></span>
-              </h4>
-              <ul>
-                <li data-i18n="about.frontendStack"></li>
-                <li data-i18n="about.restApis"></li>
-                <li data-i18n="about.container"></li>
-                <li data-i18n="about.cicd"></li>
-                <li data-i18n="about.versioning"></li>
-                <li data-i18n="about.automation"></li>
-              </ul>
-            </div>
-
+        <!-- Experience -->
+        <div class="cv-bento-block cv-bento-block--exp">
+          <div class="cv-bento-label" data-i18n="about.professionalExperience"></div>
+          <div style="font-size:0.95rem; font-weight:700; color:var(--text); margin-bottom:0.1rem;">Software Engineer</div>
+          <div class="exp-meta">
+            <span style="color:#c41e3a; font-weight:600;">ALDABA Servicios Profesionales S.L.</span>
+            &nbsp;&middot;&nbsp; A Coruña, Spain &nbsp;&middot;&nbsp; <em>Sept. 2025 – present</em>
+          </div>
+          <div class="sector-chips">
+            <span class="sector-chip">Energy</span>
+            <span class="sector-chip">Steel</span>
+            <span class="sector-chip">Transport</span>
+            <span class="sector-chip">Food &amp; Beverage</span>
+            <span class="sector-chip">Fuel dist.</span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet" data-i18n="about.aldabaExperience"></div>
           </div>
         </div>
 
-        <!-- Professional Experience -->
-        <div class="card fade-in delay-1">
-          <h3><i class="fas fa-briefcase"></i> <span data-i18n="about.professionalExperience"></span></h3>
-          <p><strong>Junior Software Consultant</strong><br>
-            <span style="color: #c41e3a;">ALDABA Servicios Profesionales S.L.</span><br>
-            A Coruña, Spain<br>
-            <em>Sept. 2025 – present</em>
-          </p>
-          <p data-i18n="about.aldabaExperience" style="margin-top:0.5rem;"></p>
+        <!-- Skills -->
+        <div class="cv-bento-block cv-bento-block--skills">
+          <div class="cv-bento-label" data-i18n="about.technicalSkills"></div>
+
+          <div class="bento-skill-group">
+            <div class="bento-skill-group-title">
+              <i class="fas fa-industry" style="font-size:0.6rem;"></i>
+              <span data-i18n="about.professionalStack"></span>
+            </div>
+            <span class="bento-skill bento-skill--pro">C#</span>
+            <span class="bento-skill bento-skill--pro">.NET</span>
+            <span class="bento-skill bento-skill--pro">Entity Framework</span>
+            <span class="bento-skill bento-skill--pro">WinForms</span>
+            <span class="bento-skill bento-skill--pro">DevExpress</span>
+            <span class="bento-skill bento-skill--pro">Infragistics</span>
+            <span class="bento-skill bento-skill--pro">React</span>
+            <span class="bento-skill bento-skill--pro">Oracle</span>
+            <span class="bento-skill bento-skill--pro">SQL Server</span>
+            <span class="bento-skill bento-skill--pro">Azure DevOps</span>
+          </div>
+
+          <div class="bento-skill-group">
+            <div class="bento-skill-group-title">
+              <i class="fas fa-flask" style="font-size:0.6rem;"></i>
+              <span data-i18n="about.projectsAcademic"></span>
+            </div>
+            <span class="bento-skill bento-skill--academic">Spring Boot</span>
+            <span class="bento-skill bento-skill--academic">Vue 3</span>
+            <span class="bento-skill bento-skill--academic">TypeScript</span>
+            <span class="bento-skill bento-skill--academic">Node.js</span>
+            <span class="bento-skill bento-skill--academic">Hexagonal Arch.</span>
+            <span class="bento-skill bento-skill--academic">JUnit</span>
+            <span class="bento-skill bento-skill--academic">Mockito</span>
+          </div>
+
+          <div class="bento-skill-group">
+            <div class="bento-skill-group-title">
+              <i class="fas fa-cogs" style="font-size:0.6rem;"></i>
+              <span data-i18n="about.toolsMethods"></span>
+            </div>
+            <span class="bento-skill bento-skill--tools">Git</span>
+            <span class="bento-skill bento-skill--tools">Docker</span>
+            <span class="bento-skill bento-skill--tools">Jenkins</span>
+            <span class="bento-skill bento-skill--tools">SonarQube</span>
+            <span class="bento-skill bento-skill--tools">Maven</span>
+            <span class="bento-skill bento-skill--tools">Kanban</span>
+            <span class="bento-skill bento-skill--tools">Scrum</span>
+          </div>
         </div>
 
         <!-- Education -->
-        <div class="card fade-in delay-1">
-          <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="about.education"></span></h3>
-          <p><strong data-i18n="about.degree"></strong><br><span data-i18n="about.university"></span></p>
-          <p style="margin-top:0.3rem; font-size:0.95rem; color:var(--muted);" data-i18n="about.graduated"></p>
-
-          <!-- TFG highlight block -->
-          <div class="tfg-block">
-            <div class="tfg-top">
-              <div>
-                <p class="tfg-label" data-i18n="about.tfgLabel"></p>
-                <p class="tfg-title">DigReport</p>
-              </div>
-              <div class="tfg-grade">
-                <span class="tfg-grade-num">9.3</span>
-                <span class="tfg-grade-den">/10</span>
-              </div>
-            </div>
-            <p class="tfg-sub" data-i18n="about.tfgDesc"></p>
-            <a href="assets/digreportmemory.pdf" target="_blank" class="btn-download" data-i18n="about.downloadTFG"></a>
+        <div class="cv-bento-block cv-bento-block--edu">
+          <div class="cv-bento-label" data-i18n="about.education"></div>
+          <div style="font-size:0.88rem; font-weight:600; color:var(--text); line-height:1.4; margin-bottom:0.15rem;" data-i18n="about.degree"></div>
+          <div style="font-size:0.8rem; color:var(--muted); margin-bottom:0.5rem;">
+            <span data-i18n="about.university"></span> &middot; <span data-i18n="about.graduated"></span>
           </div>
 
-          <img src="assets/img/udc.png" alt="University of A Coruña logo">
+          <div class="tfg-mini">
+            <div class="tfg-mini-label" data-i18n="about.tfgLabel"></div>
+            <div class="tfg-mini-header">
+              <div class="tfg-mini-title">DigReport</div>
+              <div class="tfg-mini-grade">9.3<span>/10</span></div>
+            </div>
+            <div class="tfg-mini-stack" data-i18n="about.tfgDesc"></div>
+            <a href="assets/digreportmemory.pdf" target="_blank" class="btn-download" style="margin-top:0.6rem;" data-i18n="about.downloadTFG"></a>
+          </div>
+
+          <img src="assets/img/udc.png" alt="University of A Coruña logo"
+            style="margin-top:0.9rem; max-width:80px; border-radius:4px; opacity:0.8;">
+        </div>
+
+        <!-- Certifications -->
+        <div class="cv-bento-block cv-bento-block--certs">
+          <div class="cv-bento-label" data-i18n="about.certifications"></div>
+
+          <div class="bento-cert-item">
+            <span class="bento-cert-name">Advanced Clean Code</span>
+            <span class="bento-cert-meta">
+              Vitae Consultores &middot; Apr. 2026 &middot;
+              <a href="https://www.vitaedigital.com/certificado/q50z862d30t7cqc0" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </span>
+          </div>
+          <div class="bento-cert-item">
+            <span class="bento-cert-name">Clean Code</span>
+            <span class="bento-cert-meta">
+              Vitae Consultores &middot; Oct. 2025 &middot;
+              <a href="https://www.vitaedigital.com/certificado/rs2y6xs4fi9692ui" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </span>
+          </div>
+          <div class="bento-cert-item">
+            <span class="bento-cert-name" data-i18n="about.certmentoring"></span>
+            <span class="bento-cert-meta" data-i18n="about.university"></span>
+          </div>
         </div>
 
         <!-- Languages -->
-        <div class="card fade-in delay-4">
-          <h3><i class="fas fa-language"></i> <span data-i18n="about.languages"></span></h3>
-          <div class="language-item">
-            <img src="assets/img/flags/es.png" alt="Spanish flag" class="flag-icon">
-            <img src="assets/img/flags/gal.png" alt="Galician flag" class="flag-icon">
-            <span data-i18n="about.spanishGalician"></span>
+        <div class="cv-bento-block cv-bento-block--langs">
+          <div class="cv-bento-label" data-i18n="about.languages"></div>
+
+          <div class="bento-lang-row">
+            <div class="bento-lang-flags">
+              <img src="assets/img/flags/es.png" alt="ES" class="flag-icon">
+              <img src="assets/img/flags/gal.png" alt="GAL" class="flag-icon">
+            </div>
+            <span class="bento-lang-name">Spanish / Galician</span>
+            <span class="bento-lang-level" title="Native">Native</span>
+            <div class="bento-lang-track"><div class="bento-lang-fill" style="width:100%;"></div></div>
           </div>
-          <div class="language-item">
-            <img src="assets/img/flags/gb.png" alt="UK flag" class="flag-icon">
-            <span data-i18n="about.english"></span>
+
+          <div class="bento-lang-row">
+            <div class="bento-lang-flags">
+              <img src="assets/img/flags/gb.png" alt="EN" class="flag-icon">
+            </div>
+            <span class="bento-lang-name">English</span>
+            <span class="bento-lang-level" title="C1">C1</span>
+            <div class="bento-lang-track"><div class="bento-lang-fill" style="width:83%;"></div></div>
           </div>
-          <div class="language-item">
-            <img src="assets/img/flags/fr.png" alt="French flag" class="flag-icon">
-            <span data-i18n="about.french"></span>
+
+          <div class="bento-lang-row">
+            <div class="bento-lang-flags">
+              <img src="assets/img/flags/pt.png" alt="PT" class="flag-icon">
+            </div>
+            <span class="bento-lang-name">Portuguese</span>
+            <span class="bento-lang-level" title="B1">B1</span>
+            <div class="bento-lang-track"><div class="bento-lang-fill" style="width:58%;"></div></div>
           </div>
-          <div class="language-item">
-            <img src="assets/img/flags/pt.png" alt="Portuguese flag" class="flag-icon">
-            <span data-i18n="about.portuguese"></span>
+
+          <div class="bento-lang-row">
+            <div class="bento-lang-flags">
+              <img src="assets/img/flags/fr.png" alt="FR" class="flag-icon">
+            </div>
+            <span class="bento-lang-name">French</span>
+            <span class="bento-lang-level" title="A2">A2</span>
+            <div class="bento-lang-track"><div class="bento-lang-fill" style="width:42%;"></div></div>
           </div>
-          <div class="language-item">
-            <img src="assets/img/flags/de.png" alt="German flag" class="flag-icon">
-            <span data-i18n="about.german"></span>
+
+          <div class="bento-lang-row">
+            <div class="bento-lang-flags">
+              <img src="assets/img/flags/de.png" alt="DE" class="flag-icon">
+            </div>
+            <span class="bento-lang-name">German</span>
+            <span class="bento-lang-level" title="A1 · actively studying">A1</span>
+            <div class="bento-lang-track"><div class="bento-lang-fill" style="width:17%;"></div></div>
           </div>
         </div>
 
         <!-- Soft Skills -->
-        <div class="card fade-in delay-5">
-          <h3><i class="fas fa-users"></i> <span data-i18n="about.softSkills"></span></h3>
-          <ul>
-            <li data-i18n="about.teamwork"></li>
-            <li data-i18n="about.clientContact"></li>
-            <li data-i18n="about.timeManagement"></li>
-            <li data-i18n="about.communication"></li>
-            <li data-i18n="about.publicSpeaking"></li>
-            <li data-i18n="about.stressManagement"></li>
-          </ul>
-        </div>
-
-        <!-- Certifications -->
-        <div class="card fade-in delay-3">
-          <h3><i class="fas fa-certificate"></i> <span data-i18n="about.certifications"></span></h3>
-          <ul>
-            <li><strong data-i18n="about.certmentoring"></strong>
-              <p data-i18n="about.university"></p>
-            </li>
-            <li><strong>Clean Code</strong>
-              <p>Vitae Consultores<br>
-                <em>Oct. 2025</em><br>
-                <span style="font-size:0.9rem; color:var(--muted);">ID: I6TT6IQR8UAA3342</span><br>
-                <a href="https://www.vitaedigital.com/certificado/rs2y6xs4fi9692ui" target="_blank">
-                  <i class="fas fa-external-link-alt"></i> See certificate
-                </a>
-              </p>
-            </li>
-            <li><strong>Advanced Clean Code</strong>
-              <p>Vitae Consultores<br>
-                <em>Apr. 2026</em><br>
-                <span style="font-size:0.9rem; color:var(--muted);">ID: O6STXZ8X1ZLITFXV</span><br>
-                <a href="https://www.vitaedigital.com/certificado/q50z862d30t7cqc0" target="_blank">
-                  <i class="fas fa-external-link-alt"></i> See certificate
-                </a>
-              </p>
-            </li>
-          </ul>
+        <div class="cv-bento-block cv-bento-block--soft">
+          <div class="cv-bento-label" data-i18n="about.softSkills"></div>
+          <div class="bento-soft-item" data-i18n="about.teamwork"></div>
+          <div class="bento-soft-item" data-i18n="about.clientContact"></div>
+          <div class="bento-soft-item" data-i18n="about.timeManagement"></div>
+          <div class="bento-soft-item" data-i18n="about.communication"></div>
+          <div class="bento-soft-item" data-i18n="about.publicSpeaking"></div>
+          <div class="bento-soft-item" data-i18n="about.stressManagement"></div>
         </div>
 
         <!-- Interests -->
-        <div class="card fade-in delay-4">
-          <h3><i class="fas fa-heart"></i> <span data-i18n="about.interests"></span></h3>
-          <ul>
-            <li data-i18n="about.interest1"></li>
-            <li data-i18n="about.interest2"></li>
-            <li data-i18n="about.interest3"></li>
-          </ul>
+        <div class="cv-bento-block cv-bento-block--int">
+          <div class="cv-bento-label" data-i18n="about.interests"></div>
+          <div class="bento-int-chips">
+            <span class="bento-int-chip" data-i18n="about.interest1"></span>
+            <span class="bento-int-chip" data-i18n="about.interest2"></span>
+            <span class="bento-int-chip" data-i18n="about.interest3"></span>
+          </div>
         </div>
 
       </div>
 
-      <div style="text-align:center; margin-top:2rem;">
-        <a href="contact.html?subject=CV+Request" class="btn-primary" data-i18n="about.requestCV"></a>
-      </div>
       <br>
-      <p style="color:var(--muted);"><span data-i18n="about.notWorking"></span> <a href="contact.html?subject=CV+Request">contact form</a></p>
+      <p style="color:var(--muted); text-align:center; font-size:0.9rem;">
+        <span data-i18n="about.notWorking"></span>
+        <a href="contact.html?subject=CV+Request">contact form</a>
+        &nbsp;&middot;&nbsp; marcosf.varelam@gmail.com
+      </p>
       <br>
-      <p style="color:var(--muted);"><span data-i18n="about.notWorking"></span> marcosf.varelam@gmail.com</p>
     </section>
   </main>
 

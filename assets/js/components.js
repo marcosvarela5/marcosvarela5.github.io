@@ -39,6 +39,7 @@
   if (header) {
     header.innerHTML = `
       <nav>
+        <a href="index.html" class="nav-monogram" aria-label="Home">MV</a>
         <button class="menu-toggle" aria-label="Open menu">
           <i class="fas fa-bars"></i>
         </button>

@@ -17,6 +17,10 @@
     <section id="home" class="section-home">
       <div class="home-content">
         <div class="home-text">
+
+          <!-- Label above name -->
+          <span class="hero-label">Software Engineer</span>
+
           <h1>
             <span data-i18n="index.hello"></span>
             <span class="typewriter-target" aria-label="Marcos!"></span>
@@ -28,8 +32,21 @@
             <span class="hero-role-text" id="heroRole"></span>
           </div>
 
-          <p data-i18n="index.role"></p>
-          <a href="about.html" class="btn-primary" data-i18n="menu.cv"></a>
+          <!-- Stack chips -->
+          <div class="hero-stack">
+            <span class="hero-chip">C# · .NET</span>
+            <span class="hero-chip">Spring Boot</span>
+            <span class="hero-chip">SQL Server</span>
+            <span class="hero-chip">Vue 3</span>
+            <span class="hero-chip">Hexagonal Arch.</span>
+          </div>
+
+          <!-- Dual CTA -->
+          <div class="hero-ctas">
+            <a href="about.html" class="btn-primary" data-i18n="menu.cv"></a>
+            <a href="portfolio.html" class="btn-ghost">See my work →</a>
+          </div>
+
         </div>
         <div class="home-img">
           <img src="assets/img/portada.png" alt="Marcos Varela" />
@@ -64,7 +81,7 @@
     // Rotating hero roles — reads from translations on langReady
     const roleEl = document.getElementById('heroRole');
     let current = 0;
-    let roles = ['Software Engineer', 'C# .NET', 'Industrial systems'];
+    let roles = ['Software Engineer', 'C# · .NET', 'Industrial MES/ERP', 'WinForms · React'];
     let interval = null;
 
     function showRole() {
